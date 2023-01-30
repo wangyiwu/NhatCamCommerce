@@ -1,0 +1,1252 @@
+<style>
+
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Regular.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-SemiBold.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Bold.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  font-size: 1rem;
+  line-height: 1.618;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  color: #181b28;
+  background-color: #fff;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+::-moz-selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+::selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+.text-semibold {
+  font-weight: 600 !important;
+}
+h1,
+h2 {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+.heading:first-child {
+  margin-top: 0;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 769px) {
+  .heading.text-md-left::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+h1,
+.heading--h2,
+h2 {
+  font-size: 34px;
+}
+@media (max-width: 1200px) {
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 24px;
+  }
+}
+.heading h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  padding: 0;
+  margin: 0;
+}
+.heading h2::after {
+  display: none;
+}
+p {
+  font-size: 18px;
+  margin: 0 0 2em;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+/* ul {
+  margin: 0 0 2em;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0 0 0 1.2em;
+  font-size: 18px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  ul {
+    font-size: 16px;
+  }
+}
+ul:last-child {
+  margin-bottom: 0;
+}
+ul li {
+  padding: 0 0 1em;
+  margin: 0;
+}
+ul li:last-child {
+  padding-bottom: 0;
+}
+ul li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  margin-left: -0.4em;
+  color: #dd182b;
+  background-color: currentColor;
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+} */
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.container::before,
+.container::after {
+  content: "";
+  display: table;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.col-12 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 769px) {
+  .col-md-6 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .col-lg-4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333333333336%;
+    flex: 0 0 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+.hide {
+  display: none !important;
+}
+@media (min-width: 769px) {
+  .show-md {
+    display: block !important;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+@media (min-width: 769px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+}
+.flex-main-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.section {
+  padding: 40px 0;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 425px) {
+  .section {
+    padding: 20px 0;
+  }
+}
+.btn {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  word-break: break-word;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 0;
+  padding: 21px 20px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  background-color: #dd182b;
+  -webkit-transition: background-color 0.1s ease-in-out,
+    opacity 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.btn:link,
+.btn:visited {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .btn {
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+}
+.btn--w-md {
+  width: 100%;
+  max-width: 210px;
+}
+.btn--w-lg {
+  width: 100%;
+  max-width: 370px;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.btn:focus {
+  background-color: #ea3e4f;
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.btn:hover {
+  background-color: #ea4050;
+}
+.btn:active {
+  background-color: #ea3e4f;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #b9bfd5;
+}
+.btn--inverse,
+.btn--inverse:hover,
+.btn--inverse:active,
+.btn--inverse:focus,
+.btn--inverse:link,
+.btn--inverse:visited {
+  background-color: #fff;
+  color: #dd182b;
+}
+.btn--inverse:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.btn--inverse:hover {
+  background-color: #f7f7f7;
+}
+.btn--inverse:disabled {
+  color: #fff;
+  background-color: #b9bfd5;
+}
+.btn--bordered {
+  border: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .btn--bordered {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .btn--bordered {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+.btn--inverse.btn--bordered {
+  border-color: #dd182b;
+}
+.btn--transparent {
+  background-color: transparent;
+}
+.btn--transparent.btn--inverse:hover {
+  background-color: #fff;
+}
+.btn--transparent.btn--inverse:disabled:hover {
+  color: #fff;
+  background-color: #b9bfd5;
+}
+@supports (display: grid) {
+}
+@supports (display: grid) {
+}
+.feature {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .feature {
+    font-size: 16px;
+  }
+}
+.feature__icon {
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 26px;
+  overflow: hidden;
+}
+@media (max-width: 425px) {
+  .feature__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+.feature__icon svg {
+  display: block;
+  margin: 12.5% auto;
+  width: 75%;
+  height: 75%;
+}
+.feature__icon--bordered {
+  border: 3px solid #dd182b;
+  border-radius: 50%;
+}
+.feature__icon--bordered svg {
+  margin: 17.5% auto;
+  width: 65%;
+  height: 65%;
+}
+.feature__title {
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.feature__text {
+  margin: 20px 0 0;
+}
+@media (max-width: 1200px) {
+  .feature__text {
+    margin-top: 10px;
+  }
+}
+.features-icon__fill-color-main {
+  fill: #dd182b;
+}
+.features-icon__fill-color-dark {
+  fill: #181b28;
+}
+.features-icon__fill-color-light {
+  fill: #fff;
+}
+.form-input {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1;
+  color: #181b28;
+  border: 0;
+  padding: 17px;
+  background-color: #fff;
+  outline: none;
+  -webkit-transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.form-input--bordered {
+  border: 1px solid #d3d3d3;
+}
+@media (max-width: 1024px) {
+  .form-input {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .form-input {
+    padding: 13px;
+  }
+}
+.form-input--icon-person,
+.form-input--icon-phone {
+  background-size: 32px;
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+}
+@media (max-width: 768px) {
+  .form-input--icon-person,
+  .form-input--icon-phone {
+    background-size: 26px;
+    padding-left: 54px;
+  }
+}
+.form-input--icon-person {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgOTUgOTUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KCTxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENkU3MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik01My4yLDU2LjZjLTEuMS0wLjItMS4yLTMuMy0xLjItMy4zIHMzLjQtMy4zLDQuMS03LjhjMiwwLDMuMi00LjgsMS4yLTYuNGMwLjEtMS44LDIuNS0xMy44LTkuOS0xMy44Yy0xMi40LDAtMTAsMTIuMS05LjksMTMuOGMtMiwxLjctMC44LDYuNCwxLjIsNi40IGMwLjcsNC41LDQuMSw3LjgsNC4xLDcuOHMwLDMuMS0xLjIsMy4zYy0zLjcsMC42LTE3LjUsNi43LTE3LjUsMTMuM2g0Ni40QzcwLjcsNjMuMiw1Ni45LDU3LjEsNTMuMiw1Ni42TDUzLjIsNTYuNnogTTUzLjIsNTYuNiIvPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjQ3LjUiIGN5PSI0Ny41IiByPSI0Ni41Ii8+DQo8L3N2Zz4=");
+}
+.form-input--icon-phone {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgOTUgOTUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjQ3LjUiIGN5PSI0Ny41IiByPSI0Ni41Ii8+DQoJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTU3LjgsNTMuOWMtMS4zLTEuMy0yLjktMS4zLTQuMiwwIGMtMSwxLTIsMS45LTIuOSwyLjljLTAuMywwLjMtMC41LDAuMy0wLjgsMC4xYy0wLjYtMC4zLTEuMy0wLjYtMS45LTFjLTIuOC0xLjgtNS4yLTQuMS03LjMtNi43Yy0xLTEuMy0yLTIuNy0yLjYtNC4yIGMtMC4xLTAuMy0wLjEtMC41LDAuMS0wLjhjMS0wLjksMS45LTEuOSwyLjktMi45YzEuMy0xLjMsMS4zLTIuOSwwLTQuM2MtMC44LTAuOC0xLjUtMS41LTIuMy0yLjNjLTAuOC0wLjgtMS42LTEuNi0yLjQtMi40IGMtMS4zLTEuMy0yLjktMS4zLTQuMiwwYy0xLDEtMS45LDItMi45LDIuOWMtMC45LDAuOS0xLjQsMi0xLjUsMy4yYy0wLjIsMiwwLjMsNCwxLjEsNS45YzEuNCwzLjksMy42LDcuNCw2LjMsMTAuNSBjMy42LDQuMyw3LjksNy43LDEzLDEwLjFjMi4zLDEuMSw0LjYsMS45LDcuMiwyLjFjMS44LDAuMSwzLjMtMC4zLDQuNS0xLjdjMC44LTAuOSwxLjgtMS44LDIuNy0yLjdjMS4zLTEuMywxLjMtMi45LDAtNC4zIEM2MC45LDU3LDU5LjMsNTUuNCw1Ny44LDUzLjlMNTcuOCw1My45eiBNNTcuOCw1My45Ii8+DQoJPHBhdGggZmlsbD0iIzZENkU3MSIgZD0iTTU2LjIsNDcuM2wzLTAuNWMtMC41LTIuOC0xLjgtNS4zLTMuOC03LjNjLTIuMS0yLjEtNC44LTMuNC03LjctMy45bC0wLjQsM2MyLjMsMC4zLDQuMywxLjMsNiwzIEM1NC44LDQzLjIsNTUuOCw0NS4yLDU2LjIsNDcuM0w1Ni4yLDQ3LjN6IE01Ni4yLDQ3LjMiLz4NCgk8cGF0aCBmaWxsPSIjNkQ2RTcxIiBkPSJNNjEsMzQuMWMtMy41LTMuNS03LjktNS43LTEyLjgtNi40bC0wLjQsM2M0LjIsMC42LDguMSwyLjUsMTEuMSw1LjVjMi45LDIuOSw0LjgsNi41LDUuNCwxMC41bDMtMC41IEM2Ni40LDQxLjcsNjQuMywzNy41LDYxLDM0LjFMNjEsMzQuMXogTTYxLDM0LjEiLz4NCjwvc3ZnPg==");
+}
+.form-input:focus:not(
+    [readonly],
+    .postfix-input:focus:not([readonly], .form-input--transparent),
+    .postfix-input--transparent
+  ) {
+  border-color: rgba(221, 24, 43, 0.2);
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.bg-main
+  .form-input:focus:not(
+    [readonly],
+    .bg-main
+      .postfix-input:focus:not([readonly], .bg-main .form-input--transparent),
+    .bg-main .postfix-input--transparent
+  ) {
+  -webkit-box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+  box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+}
+.form-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.form-input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-moz-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-ms-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-ms-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form {
+  position: relative;
+}
+.form__field {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.form__required {
+  position: relative;
+}
+.form__required::after {
+  content: "*";
+  position: absolute;
+  top: 0;
+  right: 6px;
+  color: #f00;
+}
+.form__response {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+.form__response:empty {
+  display: none;
+}
+.out-of-bounds-pic--worker-1 {
+  margin-top: 50px;
+}
+.out-of-bounds-pic__relative {
+  position: relative;
+}
+.out-of-bounds-pic__absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.out-of-bounds-pic__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.out-of-bounds-pic--worker-1 .out-of-bounds-pic__image {
+  top: auto;
+  bottom: -40px;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  max-width: 90%;
+  max-height: 160%;
+} /* PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */ /* PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+.plate {
+  margin: 16px auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  -webkit-box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  -webkit-transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  position: relative;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.plate + .plate {
+  margin-top: 32px;
+}
+.product-wide {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .product-wide {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.product-wide__aside {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+  background-color: #efeeef;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .product-wide__aside {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .product-wide__aside {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding-bottom: 20%;
+  }
+}
+.product-wide__aside img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.product-wide__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 75%;
+  flex: 1 1 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 32px;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .product-wide__body {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .product-wide__body {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+.product-wide__body p,
+.product-wide__body ul {
+  font-size: inherit;
+}
+.product-wide__title {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px 16px 16px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .product-wide__title {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+.product-wide__title-highlighted {
+  color: #dd182b;
+}
+.product-wide__heading {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.product-wide__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 2rem;
+}
+.product-wide__row:last-child {
+  margin-bottom: 0;
+}
+.product-wide__row--cross-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.product-wide__col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 65%;
+  flex: 1 1 65%;
+}
+@media (max-width: 768px) {
+  .product-wide__col {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .product-wide__col + .product-wide__col {
+    padding-top: 2rem;
+  }
+}
+.product-wide__col--sm {
+  -ms-flex-preferred-size: 35%;
+  flex-basis: 35%;
+}
+@media (max-width: 768px) {
+  .product-wide__col--sm {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+.product-wide__col-inner {
+  padding: 0 16px;
+}
+.product-wide__price {
+  font-size: 18px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .product-wide__price {
+    text-align: center;
+  }
+}
+.product-wide__price span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #dd182b;
+}
+@media (max-width: 768px) {
+  .product-wide__btn {
+    text-align: center;
+  }
+}
+.bg-gray {
+  background-color: #efeeef;
+}
+.bg-image-camera {
+  background-image: url("https://onecam.ru/src/img/bg-image__camera.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-blend-mode: multiply;
+}
+/*# sourceMappingURL=app.css.map */
+
+
+</style>
+
+<section class="section">
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="68.9" height="102.7" viewBox="0 0 68.9 102.7"><path class="features-icon__fill-color-main" fill="#dd182b" d="M32.2 60.7l-5.3 15.2 7.8 13 7.8-13L33.7 57"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M52 53.6L41.8 70.7l-5-14.3h3.5V53H28.6v3.3h3.5l-5 14.3-10.3-17C11.5 54.3-2 62.1.3 78.3l1.1 24.4h66.1l1.1-24.4C70.5 68 64.4 56.9 52 53.6zm-17.6 6.1l5.1 14.7-5.1 8.5-5.1-8.5 5.1-14.7zm30.9 18.2l-1 21.5H4.5l-1-21.3c-1.3-7.4 1.9-16.7 11.8-20.6l19.1 31.8 19.1-31.8c9.3 3.5 13.1 12.8 11.8 20.4zM52.5 16.6C51.7 7.3 43.9 0 34.4 0S17.1 7.3 16.3 16.6h-3.4v9.9h3.3c0 9.3 7.7 23.2 18.2 23.2s18.2-13.8 18.2-23.2h3.3v-9.9h-3.4zM32.8 3.4c.5-.1 1.1-.1 1.7-.1.6 0 1.1 0 1.7.1v4.9c0 .9-.7 1.7-1.7 1.7s-1.7-.7-1.7-1.7V3.4zm1.6 43c-7.9 0-14.9-11.1-14.9-19.9h29.8c0 8.7-7 19.9-14.9 19.9zm18.3-23.2H16.2v-3.3h3.3c-.5-8.3 4.2-13.7 10-15.7v4.1c0 2.7 2.2 5 5 5s5-2.2 5-5V4.2c5.8 2.1 10.5 7.9 9.9 15.7h3.3v3.3z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sự ra đi của một chuyên gia</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các chuyên gia của chúng tôi sẽ không chỉ giúp bạn chọn những nơi tốt nhất để lắp đặt camera quan sát, thực hiện tất cả các phép đo cần thiết và chọn thiết bị tốt nhất dựa trên mong muốn của khách hàng khó tính nhất mà còn cho bạn biết về các chương trình khuyến mãi, giảm giá và cơ hội của công ty hiện tại.</font></font></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="71.3" height="91" viewBox="0 0 71.3 91"><path class="features-icon__fill-color-main" fill="#dd182b" d="M50.1 50.1l-2 30.7 12.6-.4V50.1z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M66.9 0H4.4C2 0 0 2 0 4.4v82.2C0 89.1 2 91 4.4 91h62.5c2.4 0 4.4-2 4.4-4.4V4.4c0-2.4-2-4.4-4.4-4.4zm1.4 86.6c0 .8-.6 1.4-1.4 1.4H4.4c-.7 0-1.4-.6-1.4-1.4V4.4C3 3.7 3.7 3 4.4 3h62.5c.8 0 1.4.6 1.4 1.4v82.2z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M7.6 83.5h16.7V66.8H7.6v16.7zm3-13.7h10.6v10.6H10.6V69.8zm16.7 13.7H44V66.8H27.3v16.7zm3-13.7H41v10.6H30.3V69.8zM47 83.5h16.7V47H47v36.5zm3.1-33.4h10.6v30.3H50.1V50.1zM7.6 63.7h16.7V47H7.6v16.7zm3-13.6h10.6v10.6H10.6V50.1zm16.7 13.6H44V47H27.3v16.7zm3-13.6H41v10.6H30.3V50.1zM7.6 44h16.7V27.3H7.6V44zm3-13.7h10.6V41H10.6V30.3zM27.3 44H44V27.3H27.3V44zm3-13.7H41V41H30.3V30.3zM47 44h16.7V27.3H47V44zm3.1-13.7h10.6V41H50.1V30.3zM7.6 22.8h56.1V7.6H7.6v15.2zm3-12.2h50.1v9.1H10.6v-9.1z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phép tính</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chúng tôi đặc biệt chú ý đến dự toán chi phí. </font><font style="vertical-align: inherit;">Điều rất quan trọng đối với chúng tôi là khách hàng nhận được bức tranh tài chính đầy đủ và chính xác trong thời gian ngắn nhất có thể.</font></font></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="68.5 60.5 69.6 85.2"><path class="features-icon__fill-color-main" fill="#dd182b" d="M103.2 129.5l-1.7-7.9 5.4-9 1.9-19.3 2.8-.2 3.7 1v20.7l2.7-1.8 4.4 2.4 3.2-1.2 4.8 3.3 3.3-2.9 3.2 3.4v18.3l-2.4 4.2-3.8 3.2-20.1-.6-3.8-2.6-2.4-5.3z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M86.9 77.6c-.7 0-1.3.6-1.3 1.3 0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9c0-1.6 1.3-2.9 2.9-2.9.7 0 1.3-.6 1.3-1.3s-.6-1.3-1.3-1.3c-3.1 0-5.6 2.5-5.6 5.6 0 3.1 2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6c-.1-.8-.6-1.4-1.4-1.4zm0 15.7c-.7 0-1.3.6-1.3 1.3 0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.7 0 1.3-.6 1.3-1.3s-.6-1.4-1.4-1.4c-3.1 0-5.6 2.5-5.6 5.6 0 3.1 2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6c0-.7-.5-1.3-1.3-1.3zm15.7 2.8h-10c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3h10c.7 0 1.3-.6 1.3-1.3s-.6-1.3-1.3-1.3zm0-5.7h-10c-.7 0-1.3.6-1.3 1.3 0 .7.6 1.3 1.3 1.3h10c.7 0 1.3-.6 1.3-1.3 0-.7-.6-1.3-1.3-1.3zm-2.9 21.4h-7.1c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3h7.1c.7 0 1.3-.6 1.3-1.3s-.5-1.3-1.3-1.3zm2.9-5.7h-10c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3h10c.7 0 1.3-.6 1.3-1.3s-.6-1.3-1.3-1.3zm12.8-25.6H92.6c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3h22.8c.7 0 1.3-.6 1.3-1.3 0-.8-.6-1.3-1.3-1.3zm-5.7-5.7H92.6c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3h17.1c.7 0 1.3-.6 1.3-1.3s-.6-1.3-1.3-1.3zm-22.8 34.1c-.7 0-1.3.6-1.3 1.3 0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.7 0 1.3-.6 1.3-1.3s-.6-1.3-1.3-1.3c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6c-.1-.8-.6-1.4-1.4-1.4z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M121.1 60.5H72.7c-2.3 0-4.2 1.9-4.2 4.2v59.8c0 2.3 1.9 4.2 4.2 4.2h24.2c.7 0 1.3-.6 1.3-1.3 0-.7-.6-1.3-1.3-1.3H72.7c-.8 0-1.5-.7-1.5-1.5V64.7c0-.8.7-1.5 1.5-1.5h48.4c.8 0 1.5.7 1.5 1.5v44.1c0 .7.6 1.3 1.3 1.3.7 0 1.3-.6 1.3-1.3V64.7c.1-2.3-1.8-4.2-4.1-4.2z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M133.7 114.6c-1.2-.1-2.5.2-3.5 1-.8-1.3-2.1-2.2-3.7-2.4-1.2-.1-2.5.2-3.5 1-.8-1.3-2.1-2.2-3.7-2.4-.9-.1-1.9.1-2.7.5v-17c0-1.4-.6-2.7-1.6-3.6-1-.9-2.4-1.4-3.8-1.2-2.5.2-4.4 2.5-4.4 5.1v17l-3.9 3.9c-2.1 2.1-2.9 5-2.3 7.9l3 12.7c1.2 5.1 5.7 8.7 11 8.7h12c6.2 0 11.3-5.1 11.3-11.3v-14.7c.2-2.7-1.7-4.9-4.2-5.2zm1.7 19.9c0 4.8-3.9 8.6-8.6 8.6h-12c-4 0-7.5-2.7-8.4-6.7l-3-12.7c-.5-2 .1-4 1.5-5.4l2-2v4.6c0 .7.6 1.3 1.3 1.3s1.3-.6 1.3-1.3V95.5c0-1.2.9-2.3 2-2.4.6-.1 1.3.1 1.7.6.5.4.7 1 .7 1.7v23.5c0 .7.6 1.3 1.3 1.3s1.3-.6 1.3-1.3v-2.1c0-.6.3-1.2.7-1.7.5-.4 1.1-.6 1.7-.6 1.1.1 2 1.2 2 2.4v3.4c0 .7.6 1.3 1.3 1.3.7 0 1.3-.6 1.3-1.3v-2.1c0-.6.3-1.2.7-1.7.5-.4 1.1-.6 1.7-.6 1.1.1 2 1.2 2 2.4v3.4c0 .7.6 1.3 1.3 1.3.7 0 1.3-.6 1.3-1.3v-2.1c0-.6.3-1.2.7-1.7.5-.4 1.1-.6 1.7-.6 1.1.1 2 1.2 2 2.4l.5 14.8z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Công việc thiết kế</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết kế có thẩm quyền là nền tảng để bắt đầu bất kỳ công việc xây dựng và lắp đặt nào cũng như bảo trì hệ thống đã tạo sau đó. </font><font style="vertical-align: inherit;">Các chuyên gia có trình độ cao sẽ chuẩn bị một dự án riêng lẻ, có tính đến tất cả các yêu cầu và mong muốn của khách hàng.</font></font></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" height="82" viewBox="0 0 82.1 82"><path class="features-icon__fill-color-dark" fill="#181b28" d="M29.1 44.1c-.7.7-1.9 2-1.9 2L13.4 59.9l-8.8 4.9c-.2.1-.4.3-.6.6L.1 73.3c-.3.5-.2 1.2.3 1.6l4.9 4.9c.3.3.6.4 1 .4.2 0 .4 0 .6-.1l7.9-3.9c.2-.1.5-.3.6-.6l4.9-8.8L34 53s1.2-1.2 1.9-2l-6.8-6.9zM18.2 64.9c-.1.1-.2.2-.2.3l-4.8 8.5L6.6 77l-3.5-3.5L6.4 67l8.5-4.8c.1-.1.2-.1.3-.2l13.9-13.9L32 51 18.2 64.9zM79.5 7.5l-4.9-4.9C71.4-.7 66-.9 62.5 2.1l-8.7 7.5-.3.3-8.4 14-5.4 1.8c-.5.2-.8.5-.9 1-.1.5 0 1 .4 1.3l14.7 14.7c.3.3.6.4 1 .4h.3c.5-.1.8-.5 1-.9l1.8-5.4 14.2-8.6.3-.3 7.3-8.5c3.1-3.3 2.9-8.7-.3-11.9zm-1.6 10.2L70.7 26l-14.5 8.8c-.3.2-.5.4-.6.8l-1.3 3.8L51 36l-4.9-4.9-3.3-3.3 3.8-1.3c.3-.1.6-.3.8-.6L56 11.6l8.5-7.4c2.4-2 6.1-1.9 8.3.3l4.9 4.9c2.1 2.2 2.2 5.9.2 8.3z"></path><path class="features-icon__fill-color-main" fill="#dd182b" d="M20.7 30.7l-5.8.6-6.5-1.1L3.3 25l-1.6-6.9 1.1-4.9 10.5 8.7 6.9-7.5-9.1-9.7 5.6-.6L23 5.2l4.5 4.6 2.2 5.3-.8 7.8 31 30.5 6.1-.8 4.9 1.4 5 3.8 2.5 5.6-.1 3.7-.8 4.3-10.3-8.8-7.3 6.9 8.9 9.6-2.4 1.5-5.5-.9-5.8-2.2-4.1-6.6-.4-7.2 1.2-1.9z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M75.6 55.9c-4.1-4.1-10.1-5.5-15.5-3.7L30.5 22.6c1.8-5.4.3-11.5-3.7-15.5C22.4 2.7 16 1.4 10.3 3.6c-.4.2-.8.6-.9 1-.1.5 0 .9.4 1.3l8.8 8.8-5.9 5.9L4 11.8c-.3-.3-.8-.5-1.3-.4-.5.1-.8.4-1 .9C-.5 18 .8 24.4 5.1 28.7c4.1 4.1 10.1 5.5 15.5 3.7l11 11 2 2 2.9 2.9 2 2L50.2 62c-1.8 5.4-.3 11.5 3.7 15.5 2.9 2.9 6.8 4.5 10.8 4.5 1.9 0 3.8-.3 5.6-1.1.4-.2.8-.6.9-1 .1-.5 0-.9-.4-1.3L62 69.8l5.9-5.9 8.8 8.8c.3.3.8.5 1.3.4.5-.1.8-.4 1-.9 2.2-5.6.9-12-3.4-16.3zM77 69.1L68.9 61c-.5-.5-1.4-.5-2 0L59 68.8c-.3.3-.4.6-.4 1s.1.7.4 1l8.2 8.2c-4.1.8-8.3-.4-11.3-3.4-3.5-3.5-4.6-8.8-2.8-13.4.2-.5.1-1.1-.3-1.5L22 29.8c-.3-.3-.6-.4-1-.4-.2 0-.3 0-.5.1-4.6 1.8-9.9.7-13.4-2.8-3-3-4.2-7.2-3.4-11.3l8.2 8.2c.5.5 1.4.5 2 0l7.9-7.9c.5-.5.5-1.4 0-2l-8.2-8.2c3.9-.7 8.2.5 11.2 3.5 3.5 3.5 4.6 8.8 2.8 13.4-.2.5-.1 1.1.3 1.5l30.8 30.8c.4.4 1 .5 1.5.3 4.6-1.8 9.9-.7 13.4 2.8 3 3 4.2 7.3 3.4 11.3z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Công việc lắp ráp</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các nhân viên của bộ phận lắp ráp là niềm tự hào của công ty chúng tôi. </font><font style="vertical-align: inherit;">Tất cả các công việc sẽ được thực hiện theo kế hoạch làm việc tuân thủ tất cả các tiêu chuẩn và tiêu chuẩn hiện có, cũng như sử dụng các vật liệu, công cụ và thiết bị hiện đại mà không ảnh hưởng đến việc sửa chữa hiện có.</font></font></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86"><path class="features-icon__fill-color-main" fill="#dd182b" d="M56.2 7.3L60.5 4 62 1.8h4.5l.5 4.5 4.7 1.2 5-1.5 2.5 2.5-1.7 5.3 2.2 3.7 4.8 1.5-.5 6.3-4.3.5-1.2 4.5 1.2 3.2-3.5 3.8-3.5-1.3-5.2 1.5-1 4H61l-.3-4.2-4.7-1-4.3.7-3.5-3.2L50 31l-1.8-5.7-3.7-1.5-.5-4.5 4.2-1.8 1.5-4.5-1.2-4.2 3.2-2.5z"></path><path class="features-icon__fill-color-light" fill="#fff" d="M62.5 16l-4.3 3.8.8 5.5 5.7 2 5.5-3.8-.2-5z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M55.2 61.9c-.9-.5-1.8-1.1-2.8-1.6.2-1.9.2-3.7 0-5.6.9-.5 1.9-1.1 2.8-1.6 1.5-.9 2.1-2.8 1.5-4.5l-2-4.8c-.7-1.6-2.5-2.5-4.2-2.1-1 .3-2.1.5-3.1.8-1.2-1.5-2.5-2.8-4-4 .3-1 .5-2.1.8-3.1.4-1.7-.5-3.5-2.1-4.2l-4.8-2c-1.6-.7-3.6 0-4.5 1.5-.5.9-1.1 1.8-1.6 2.8-1.9-.2-3.7-.2-5.6 0-.5-.9-1.1-1.9-1.6-2.8-.9-1.5-2.8-2.1-4.5-1.5l-4.8 2c-1.6.7-2.5 2.5-2.1 4.2.3 1 .5 2.1.8 3.1-1.5 1.2-2.8 2.5-4 4-1-.3-2.1-.5-3.1-.8-1.7-.4-3.5.5-4.2 2.1l-2 4.8c-.7 1.6 0 3.6 1.5 4.5.9.5 1.8 1.1 2.8 1.6-.2 1.9-.2 3.7 0 5.6-.9.5-1.9 1.1-2.8 1.6-1.5.9-2.1 2.8-1.5 4.5l2 4.8c.7 1.6 2.5 2.5 4.2 2.1 1-.3 2.1-.5 3.1-.8 1.2 1.5 2.5 2.8 4 4-.3 1-.5 2.1-.8 3.1-.4 1.7.5 3.5 2.1 4.2l4.8 2c.5.1 1 .2 1.5.2 1.2 0 2.4-.6 3.1-1.7.5-.9 1.1-1.8 1.6-2.8 1.9.2 3.7.2 5.6 0 .5.9 1.1 1.9 1.6 2.8.9 1.5 2.8 2.1 4.5 1.5l4.8-2c1.6-.7 2.5-2.5 2.1-4.2-.3-1-.5-2.1-.8-3.1 1.5-1.2 2.8-2.5 4-4 1 .3 2.1.5 3.1.8 1.7.4 3.5-.5 4.2-2.1l2-4.8c.6-1.6 0-3.6-1.6-4.5zm-3.9 7.6c-1-.2-2-.5-3-.8-1.4-.4-2.9.1-3.8 1.3-1 1.3-2.2 2.5-3.5 3.5-1.1.9-1.6 2.4-1.3 3.8.3 1 .5 2 .8 3l-4.4 1.8c-.5-.9-1-1.8-1.6-2.6-.7-1.3-2.1-2-3.6-1.8-1.7.2-3.3.2-5 0-1.4-.2-2.8.5-3.6 1.8-.5.9-1 1.8-1.6 2.6l-4.4-1.8c.2-1 .5-2 .8-3 .4-1.4-.1-2.9-1.3-3.8-1.3-1-2.5-2.2-3.5-3.5-.9-1.1-2.4-1.6-3.8-1.3-1 .3-2 .5-3 .8l-1.8-4.4c.9-.5 1.8-1 2.6-1.6 1.3-.7 2-2.1 1.8-3.6-.2-1.7-.2-3.3 0-5 .2-1.4-.5-2.8-1.8-3.6-.9-.5-1.8-1-2.6-1.6l1.8-4.4c1 .2 2 .5 3 .8 1.4.4 2.9-.1 3.8-1.3 1-1.3 2.2-2.5 3.5-3.5 1.1-.9 1.6-2.4 1.3-3.8-.3-1-.5-2-.8-3l4.4-1.8c.5.9 1 1.8 1.6 2.6.7 1.3 2.1 2 3.6 1.8 1.7-.2 3.3-.2 5 0 1.4.2 2.8-.5 3.6-1.8.5-.9 1-1.8 1.6-2.6l4.4 1.8c-.2 1-.5 2-.8 3-.4 1.4.1 2.9 1.3 3.8 1.3 1 2.5 2.2 3.5 3.5.9 1.1 2.4 1.6 3.8 1.3 1-.3 2-.5 3-.8l1.8 4.4c-.9.5-1.8 1-2.6 1.6-1.3.7-2 2.1-1.8 3.6.2 1.7.2 3.3 0 5-.2 1.4.5 2.8 1.8 3.6.9.5 1.8 1 2.6 1.6l-1.8 4.4z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M40.6 52.5c-2.8-6.7-10.5-9.9-17.1-7.1-6.7 2.8-9.9 10.5-7.1 17.1 1.3 3.2 3.9 5.8 7.1 7.1 1.6.7 3.3 1 5 1 1.7 0 3.4-.3 5-1 6.7-2.7 9.9-10.4 7.1-17.1zM32 66.1c-2.3.9-4.8.9-7.1 0s-4.1-2.7-5-5c-2-4.7.3-10.2 5-12.1 1.2-.5 2.4-.7 3.5-.7 3.6 0 7.1 2.2 8.6 5.7 2 4.7-.2 10.1-5 12.1zM83.4 17c-.7-.1-1.3-.2-2-.3-.3-1.2-.8-2.3-1.4-3.3.4-.6.8-1.1 1.2-1.6.9-1.2.8-2.9-.3-4l-2.7-2.7c-1.1-1.1-2.8-1.2-4-.3-.5.4-1.1.8-1.6 1.2-1.1-.6-2.2-1-3.3-1.4-.1-.7-.2-1.4-.3-2-.2-1.5-1.5-2.6-3-2.6h-3.8c-1.5 0-2.8 1.1-3 2.6-.1.7-.2 1.3-.3 2-1.1.4-2.2.8-3.3 1.4-.5-.4-1.1-.8-1.6-1.2-1.2-.9-2.9-.8-4 .3l-2.7 2.7c-1.1 1.1-1.2 2.8-.3 4 .4.5.8 1.1 1.2 1.6-.6 1.1-1 2.2-1.4 3.3-.7.1-1.4.2-2 .3-1.5.2-2.6 1.5-2.6 3v3.8c0 1.5 1.1 2.8 2.6 3 .7.1 1.3.2 2 .3.3 1.2.8 2.3 1.4 3.3-.4.5-.8 1.1-1.2 1.6-.9 1.2-.8 2.9.3 4l2.7 2.7c1.1 1.1 2.8 1.2 4 .3.5-.4 1.1-.8 1.6-1.2 1.1.6 2.2 1 3.3 1.4.1.7.2 1.4.3 2 .2 1.5 1.5 2.6 3 2.6H66c1.5 0 2.8-1.1 3-2.6.1-.7.2-1.3.3-2 1.2-.3 2.3-.8 3.3-1.4.5.4 1.1.8 1.6 1.2 1.2.9 2.9.8 4-.3l2.7-2.7c1.1-1.1 1.2-2.8.3-4-.4-.5-.8-1.1-1.2-1.6.6-1.1 1-2.2 1.4-3.3.7-.1 1.4-.2 2-.3 1.5-.2 2.6-1.5 2.6-3V20c0-1.5-1.1-2.8-2.6-3zm-1.1 6.2l-1.8.3c-1.2.2-2.2 1-2.5 2.2-.3 1.1-.8 2.2-1.3 3.2-.6 1.1-.5 2.4.2 3.4.4.5.8 1 1.1 1.5l-1.9 1.9c-.5-.4-1-.7-1.5-1.1-1-.8-2.3-.8-3.4-.2-1 .6-2.1 1-3.2 1.3-1.2.3-2 1.3-2.2 2.5l-.3 1.8h-2.7l-.3-1.8c-.2-1.2-1-2.2-2.2-2.5-1.1-.3-2.2-.8-3.2-1.3-1.1-.6-2.4-.5-3.4.2-.5.4-1 .8-1.5 1.1l-1.9-1.9c.4-.5.7-1 1.1-1.5.8-1 .8-2.3.2-3.4-.6-1-1-2.1-1.3-3.2-.3-1.2-1.3-2-2.5-2.2l-1.8-.3v-2.7l1.8-.3c1.2-.2 2.2-1 2.5-2.2.3-1.1.8-2.2 1.3-3.2.6-1.1.5-2.4-.2-3.4-.4-.5-.8-1-1.1-1.5L52.2 8c.5.4 1 .7 1.5 1.1 1 .8 2.3.8 3.4.2 1-.6 2.1-1 3.2-1.3 1.2-.3 2-1.3 2.2-2.5l.3-1.8h2.7l.3 1.8c.2 1.2 1 2.2 2.2 2.5 1.1.3 2.2.8 3.2 1.3 1.1.6 2.4.5 3.4-.2.5-.4 1-.8 1.5-1.1L78 9.9c-.4.5-.7 1-1.1 1.5-.8 1-.8 2.3-.2 3.4.6 1 1 2.1 1.3 3.2.3 1.2 1.3 2 2.5 2.2l1.8.3v2.7z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M64.2 14.1c-4.3 0-7.8 3.5-7.8 7.8s3.5 7.8 7.8 7.8 7.8-3.5 7.8-7.8c-.1-4.3-3.6-7.8-7.8-7.8zm0 12.1c-2.4 0-4.3-1.9-4.3-4.3s1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3c0 2.3-2 4.3-4.3 4.3z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Việc thiết lập tổ hợp hệ thống giám sát video sẽ được thực hiện bởi các chuyên gia được chứng nhận có nhiều năm kinh nghiệm trong việc thiết lập hệ thống giám sát video ở nhiều mức độ phức tạp khác nhau.</font></font></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <div class="feature__icon feature__icon--bordered">
+                                                        <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="90.7" height="86.5" viewBox="0 0 90.7 86.5"><path class="features-icon__fill-color-main" fill="#dd182b" d="M66 57.8l-4.5-6.5 10-10.5 17.5 14-1.5 5.5-9.5 6.5-6-2.5-8.8 7.6-2.8.4-.4 3.5-4 3.6-2.1-.9-.5 3.5-1.5 3.1-6.9-.6v-6.2z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M39.2 45.3H18.5c-1.1 0-2.1.9-2.1 2.1v35h-4.1V35c0-1.1-.9-2.1-2.1-2.1s-2 1-2 2.1v49.5c0 1.1.9 2.1 2.1 2.1h28.8c1.1 0 2.1-.9 2.1-2.1V47.4c0-1.1-.9-2.1-2-2.1zm-2.1 37.1H20.6v-33h16.5v33z"></path><circle class="features-icon__fill-color-dark" fill="#181b28" cx="33" cy="65.9" r="2.1"></circle><path class="features-icon__fill-color-dark" fill="#181b28" d="M86 24.7L80.3 21c0-.1.1-.2.1-.4V4.1c1.1 0 2.1-.9 2.1-2.1s-1-2-2.1-2H68c-1.1 0-2.1.9-2.1 2.1s.9 2.1 2.1 2.1v6.2c0 1.1.9 2.1 2.1 2.1 1.1 0 2.1-.9 2.1-2.1V4.1h4.1v14.2l-26-16.9c-2.9-1.9-6.9-1.9-9.8 0L4.7 24.7C1.8 26.6 0 29.8 0 33.3V35c0 1.1.9 2.1 2.1 2.1s2.1-.9 2.1-2.1v-1.7c0-2.1 1.1-4 2.8-5.2L42.7 4.9c1.6-1 3.7-1 5.3 0l35.7 23.2a6.1 6.1 0 0 1 2.8 4.8h-6.2c-1.1 0-2.1.9-2.1 2.1s.9 2.1 2.1 2.1h8.2c1.1 0 2.1-.9 2.1-2.1v-1.7c.1-3.5-1.7-6.7-4.6-8.6zm2.6 28L77.1 41.2c-2.7-2.7-7.3-2.7-9.9 0l-5.3 5.3c-1.3 1.3-2.1 3.1-2.1 5s.7 3.6 2.1 5l1.2 1.2-19.2 19.1c-.4.4-.6.9-.6 1.5v6.2c0 1.1.9 2.1 2.1 2.1h6.2c.5 0 1.1-.2 1.5-.6l2.1-2.1c.4-.4.6-.9.6-1.5v-2.1h2.1c.5 0 1.1-.2 1.5-.6l2.1-2.1c.4-.4.6-.9.6-1.5V74h2.1c.5 0 1.1-.2 1.5-.6l6.8-6.8 1.2 1.2c2.7 2.7 7.3 2.7 9.9 0l5.3-5.3c1.3-1.3 2.1-3.1 2.1-5-.3-1.7-1.1-3.5-2.4-4.8zm-2.9 7.1l-5.3 5.3c-1.1 1.1-3 1.1-4.1 0l-2.7-2.7c-.8-.8-2.1-.8-2.9 0L63 70.1h-3.3c-1.1 0-2.1.9-2.1 2.1v3.3l-.9.9h-3.3c-1.1 0-2.1.9-2.1 2.1v3.3l-.9.9h-3.3v-3.3l18.5-18.5.6.6c.4.4.9.6 1.5.6.5 0 1.1-.2 1.5-.6.8-.8.8-2.1 0-2.9l-4.7-4.7c-.5-.5-.9-1.3-.9-2.1s.3-1.5.9-2.1l5.3-5.3c1.1-1.1 3-1.1 4.1 0l11.5 11.5c.5.5.9 1.3.9 2.1.2.5-.1 1.2-.6 1.8zm-5.3 16.4c-1.1 0-2.1.9-2.1 2.1v4.1H61.8c-1.1 0-2.1.9-2.1 2.1 0 1.1.9 2.1 2.1 2.1h18.5c1.1 0 2.1-.9 2.1-2.1v-6.2c0-1.1-.9-2.1-2-2.1z"></path></svg>
+                                                </div>
+                    <div class="feature__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giao nhận đối tượng</font></font></div>
+                    <div class="feature__text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các chuyên gia của chúng tôi sẽ hướng dẫn người dùng trong tương lai và dạy những điều cơ bản về hoạt động có thẩm quyền.</font></font></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+
+
+<section class="section bg-gray out-of-bounds-pic out-of-bounds-pic--worker-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-center text-md-left">
+                <div class="heading heading--h2 text-center text-md-left">
+                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gọi cho một chuyên gia</font></font></h2>
+                </div>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nếu bạn muốn gọi một chuyên gia cho đối tượng, hãy để lại một yêu cầu. </font><font style="vertical-align: inherit;">Khởi hành của một chuyên gia trong Đường vành đai Moscow là miễn phí.</font></font></p>
+                <button class="btn btn--w-lg btn--inverse btn--transparent btn--bordered" type="button" data-popup-target="simple-request" data-popup-title="Вызвать специалиста" data-popup-form-action="request-specialist"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gọi cho một chuyên gia</font></font></button>
+            </div>
+            <div class="col-12 col-md-6 hide show-md out-of-bounds-pic__relative">
+                <div class="out-of-bounds-pic__absolute">
+                    
+                    
+                
+                        <picture>
+                            <source srcset="https://onecam.ru/src/img/bg-image__planner.webp" type="image/webp">
+                            <img class="out-of-bounds-pic__image" src="https://onecam.ru/src/img/bg-image__planner.png" alt="">
+                        </picture>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="solutions">
+    <div class="container">
+        <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giải pháp điển hình</font></font></h2>
+        <p class="text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chúng tôi có các giải pháp giám sát video tiêu chuẩn cho các nhiệm vụ cụ thể. </font><font style="vertical-align: inherit;">Mỗi bộ đã bao gồm chi phí lắp đặt và bộ thiết bị tối ưu: camera, DVR, dây cáp, v.v.</font></font></p>
+
+        <div class="plate">
+            <div class="product-wide">
+                <div class="product-wide__aside">
+                    <div class="product-wide__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đối với </font></font><span class="product-wide__title-highlighted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">một ngôi nhà riêng</font></font></span></div>
+                    
+                    
+                
+                        <picture>
+                            <source srcset="https://onecam.ru/src/img/product-wide_cover_01.webp" type="image/webp">
+                            <img src="https://onecam.ru/src/img/product-wide_cover_01.jpg" alt="">
+                        </picture>
+                    </div>
+                <div class="product-wide__body">
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đó là cách dễ dàng nhất để theo dõi ngôi nhà của bạn từ trong ra ngoài, xem con bạn đã làm bài tập về nhà hay xem thú cưng của bạn thế nào khi bạn đi vắng.</font></font></p>
+                    <div class="product-wide__row">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thành phần</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 camera HD</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chiếu sáng hồng ngoại</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ĐẦU GHI HÌNH</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cài đặt chìa khóa trao tay</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Những cơ hội</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tăng cường đảm bảo an toàn, bảo mật tài sản</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ghi lại tất cả các sự kiện báo động</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kiểm soát công việc của nhân viên phục vụ</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trông trẻ</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giám sát 24/7 qua internet từ PC hoặc app</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wide__row product-wide__row--cross-center">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">34 990</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__btn">
+                                    <button class="btn btn--w-md" type="button" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="typical-solution__house"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plate">
+            <div class="product-wide">
+                <div class="product-wide__aside">
+                    <div class="product-wide__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cho </font></font><span class="product-wide__title-highlighted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">văn phòng</font></font></span></div>
+                    
+                    
+                
+                        <picture>
+                            <source srcset="https://onecam.ru/src/img/product-wide_cover_02.webp" type="image/webp">
+                            <img src="https://onecam.ru/src/img/product-wide_cover_02.jpg" alt="">
+                        </picture>
+                    </div>
+                <div class="product-wide__body">
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lắp đặt camera trong văn phòng của bạn để tăng năng suất của nhân viên. </font><font style="vertical-align: inherit;">Điều này sẽ giúp bạn đảm bảo kiểm soát liên tục quy trình làm việc và sắp xếp công việc một cách tối ưu ngay cả khi bạn vắng mặt.</font></font></p>
+                    <div class="product-wide__row">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thành phần</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 camera HD</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chiếu sáng hồng ngoại</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ĐẦU GHI HÌNH</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cài đặt chìa khóa trao tay</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Những cơ hội</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cải thiện an ninh của tổ chức và tài sản của nó</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xác định truy cập trái phép</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kiểm soát nhân sự</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giám sát 24/7 qua internet từ PC hoặc app</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tùy chọn: ghi âm</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wide__row product-wide__row--cross-center">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">31 990</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__btn">
+                                    <button class="btn btn--w-md" type="button" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="typical-solution__office"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plate">
+            <div class="product-wide">
+                <div class="product-wide__aside">
+                    <div class="product-wide__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cho </font></font><span class="product-wide__title-highlighted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cửa hàng</font></font></span></div>
+                    
+                    
+                
+                        <picture>
+                            <source srcset="https://onecam.ru/src/img/product-wide_cover_03.webp" type="image/webp">
+                            <img src="https://onecam.ru/src/img/product-wide_cover_03.jpg" alt="">
+                        </picture>
+                    </div>
+                <div class="product-wide__body">
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Việc lắp đặt kịp thời video giám sát trong cửa hàng giúp ngăn chặn hoặc giảm thiểu sự gia tăng trộm cắp, giải quyết tranh chấp và tăng hiệu quả làm việc của nhân viên.</font></font></p>
+                    <div class="product-wide__row">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thành phần</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 máy ảnh HD</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 camera FullHD mỗi lần thanh toán</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chiếu sáng hồng ngoại</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ĐẦU GHI HÌNH</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cài đặt chìa khóa trao tay</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Những cơ hội</font></font></div>
+                                <ul>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tăng cường đảm bảo an toàn, bảo mật tài sản</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ghi lại tất cả các giao dịch trong khu vực tiền mặt</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kiểm soát nhân sự</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giám sát 24/7 qua internet từ PC hoặc app</font></font></li>
+                                    <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tùy chọn: ghi âm, đếm người</font></font></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wide__row product-wide__row--cross-center">
+                        <div class="product-wide__col product-wide__col--sm">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">32 490</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                            </div>
+                        </div>
+                        <div class="product-wide__col">
+                            <div class="product-wide__col-inner">
+                                <div class="product-wide__btn">
+                                    <button class="btn btn--w-md" type="button" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="typical-solution__shop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+
+<section class="section bg-gray bg-image-camera">
+    <div class="container">
+        <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Không tìm thấy một giải pháp cho vấn đề của bạn?</font></font></h2>
+        <p class="text-center text-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để lại thông tin liên lạc của bạn, chúng tôi sẽ liên hệ với bạn và giúp bạn tìm ra giải pháp cho các nhiệm vụ được yêu cầu.</font></font></p>
+        <form class="form js-form" method="post" action="/index/form">
+            <div class="form__response js-form__response"></div>
+            <input type="hidden" name="_action" value="callback">
+            <div class="row flex-main-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="form__field form__required">
+                        <input class="form-input form-input--bordered form-input--icon-person" autocomplete="off" type="text" name="name" value="" placeholder="Tên của bạn">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="form__field form__required">
+                        <input class="form-input form-input--bordered form-input--icon-phone js-phone-mask" autocomplete="off" type="text" name="phone" value="" placeholder="số điện thoại của bạn">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="form__field">
+                        <button class="btn btn--block form__button js-form__submit" type="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nộp đơn</font></font></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

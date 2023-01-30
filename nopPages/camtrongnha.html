@@ -1,5 +1,5 @@
 <style>
-    /* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -11,30 +11,73 @@ body {
 section {
   display: block;
 }
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+b {
+  font-weight: inherit;
+}
+b {
+  font-weight: bolder;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/src/fonts/opensans/subset-OpenSans-Regular.woff2") format("woff2"),
-    url("/src/fonts/opensans/subset-OpenSans-Regular.woff") format("woff");
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Regular.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff2") format("woff2"),
-    url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff") format("woff");
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-SemiBold.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/src/fonts/opensans/subset-OpenSans-Bold.woff2") format("woff2"),
-    url("/src/fonts/opensans/subset-OpenSans-Bold.woff") format("woff");
+  src: url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Bold.woff2") format("woff2"),
+    url("https://onecam.ru/src/fonts/opensans/subset-OpenSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -85,6 +128,206 @@ body {
   background-color: #dd182b;
   color: #fff;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-color-main {
+  color: #dd182b;
+}
+h1,
+h2 {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+.heading:first-child {
+  margin-top: 0;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading.text-left::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+.heading--simple {
+  text-transform: none;
+  font-weight: 400;
+}
+.heading--h1,
+h1,
+.heading--h2,
+h2 {
+  font-size: 34px;
+}
+@media (max-width: 1200px) {
+  .heading--h1,
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .heading--h1,
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .heading--h1,
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .heading--h1,
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  .heading--h1,
+  h1,
+  .heading--h2,
+  h2 {
+    font-size: 24px;
+  }
+}
+.heading--h3 {
+  font-size: 30px;
+}
+@media (max-width: 1200px) {
+  .heading--h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .heading--h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .heading--h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .heading--h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 425px) {
+  .heading--h3 {
+    font-size: 20px;
+  }
+}
+.heading--no-dash::after {
+  display: none;
+}
+.heading h1,
+.heading h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  padding: 0;
+  margin: 0;
+}
+.heading h1::after,
+.heading h2::after {
+  display: none;
+}
+p {
+  font-size: 18px;
+  margin: 0 0 2em;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+p:last-child {
+  margin-bottom: 0;
+}
+/* ul {
+  margin: 0 0 2em;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0 0 0 1.2em;
+  font-size: 18px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  ul {
+    font-size: 16px;
+  }
+}
+ul:last-child {
+  margin-bottom: 0;
+}
+ul li {
+  padding: 0 0 1em;
+  margin: 0;
+}
+ul li:last-child {
+  padding-bottom: 0;
+}
+ul li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  margin-left: -0.4em;
+  color: #dd182b;
+  background-color: currentColor;
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+} */
 .container {
   max-width: 1200px;
   padding: 0 16px;
@@ -94,6 +337,272 @@ body {
 .container::after {
   content: "";
   display: table;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.col-10 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 83.33333333333334%;
+  flex: 0 0 83.33333333333334%;
+  max-width: 83.33333333333334%;
+}
+.col-12 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 426px) {
+  .col-sm-6 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 426px) {
+  .col-sm-8 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66666666666667%;
+    flex: 0 0 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+@media (min-width: 769px) {
+  .col-md-4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333333333336%;
+    flex: 0 0 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+@media (min-width: 769px) {
+  .col-md-6 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  .col-md-8 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66666666666667%;
+    flex: 0 0 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+@media (min-width: 1025px) {
+  .col-lg-3 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media (min-width: 1025px) {
+  .col-lg-4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333333333336%;
+    flex: 0 0 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+.ovh {
+  overflow: hidden !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.order-0 {
+  -webkit-box-ordinal-group: 1 !important;
+  -ms-flex-order: 0 !important;
+  order: 0 !important;
+}
+@media (min-width: 769px) {
+  .order-md-0 {
+    -webkit-box-ordinal-group: 1 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+}
+.order-1 {
+  -webkit-box-ordinal-group: 2 !important;
+  -ms-flex-order: 1 !important;
+  order: 1 !important;
+}
+@media (min-width: 769px) {
+  .order-md-1 {
+    -webkit-box-ordinal-group: 2 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+}
+.pv-1 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+@media (min-width: 1025px) {
+  .pv-1 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+.p-2 {
+  padding-top: 16px !important;
+  padding-right: 16px !important;
+  padding-bottom: 16px !important;
+  padding-left: 16px !important;
+}
+@media (min-width: 1025px) {
+  .p-2 {
+    padding-top: 32px !important;
+    padding-right: 32px !important;
+    padding-bottom: 32px !important;
+    padding-left: 32px !important;
+  }
+}
+.mh-n2 {
+  margin-right: -16px !important;
+  margin-left: -16px !important;
+}
+@media (min-width: 1025px) {
+  .mh-n2 {
+    margin-right: -32px !important;
+    margin-left: -32px !important;
+  }
+}
+.ph-2 {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+@media (min-width: 1025px) {
+  .ph-2 {
+    padding-right: 32px !important;
+    padding-left: 32px !important;
+  }
+}
+.pv-2 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+@media (min-width: 1025px) {
+  .pv-2 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+}
+.pb-2 {
+  padding-bottom: 16px !important;
+}
+@media (min-width: 1025px) {
+  .pb-2 {
+    padding-bottom: 32px !important;
+  }
+}
+.pv-6 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+@media (min-width: 1025px) {
+  .pv-6 {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+  }
+}
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.flex-item {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 1 0px !important;
+  flex: 1 1 0 !important;
+}
+.flex-main-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.flex-cross-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+.flex-cross-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
 .section {
   padding: 40px 0;
@@ -108,9 +617,138 @@ body {
     padding: 20px 0;
   }
 }
+.btn {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  word-break: break-word;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 0;
+  padding: 21px 20px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  background-color: #dd182b;
+  -webkit-transition: background-color 0.1s ease-in-out,
+    opacity 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.btn:link,
+.btn:visited {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .btn {
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+}
+.btn--w-md {
+  width: 100%;
+  max-width: 210px;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.btn:focus {
+  background-color: #ea3e4f;
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.btn:hover {
+  background-color: #ea4050;
+}
+.btn:active {
+  background-color: #ea3e4f;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #b9bfd5;
+}
 @supports (display: grid) {
 }
 @supports (display: grid) {
+}
+.features-icon__fill-color-main {
+  fill: #dd182b;
+}
+.features-icon__fill-color-dark {
+  fill: #181b28;
+}
+.features-icon__stroke-color-main {
+  stroke: #dd182b;
+}
+.form-input {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1;
+  color: #181b28;
+  border: 0;
+  padding: 17px;
+  background-color: #fff;
+  outline: none;
+  -webkit-transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.form-input--bordered {
+  border: 1px solid #d3d3d3;
+}
+@media (max-width: 1024px) {
+  .form-input {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .form-input {
+    padding: 13px;
+  }
+}
+.form-input--icon-person,
+.form-input--icon-phone {
+  background-size: 32px;
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+}
+@media (max-width: 768px) {
+  .form-input--icon-person,
+  .form-input--icon-phone {
+    background-size: 26px;
+    padding-left: 54px;
+  }
+}
+.form-input--icon-person {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgOTUgOTUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KCTxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENkU3MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik01My4yLDU2LjZjLTEuMS0wLjItMS4yLTMuMy0xLjItMy4zIHMzLjQtMy4zLDQuMS03LjhjMiwwLDMuMi00LjgsMS4yLTYuNGMwLjEtMS44LDIuNS0xMy44LTkuOS0xMy44Yy0xMi40LDAtMTAsMTIuMS05LjksMTMuOGMtMiwxLjctMC44LDYuNCwxLjIsNi40IGMwLjcsNC41LDQuMSw3LjgsNC4xLDcuOHMwLDMuMS0xLjIsMy4zYy0zLjcsMC42LTE3LjUsNi43LTE3LjUsMTMuM2g0Ni40QzcwLjcsNjMuMiw1Ni45LDU3LjEsNTMuMiw1Ni42TDUzLjIsNTYuNnogTTUzLjIsNTYuNiIvPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjQ3LjUiIGN5PSI0Ny41IiByPSI0Ni41Ii8+DQo8L3N2Zz4=");
+}
+.form-input--icon-phone {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgOTUgOTUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjQ3LjUiIGN5PSI0Ny41IiByPSI0Ni41Ii8+DQoJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTU3LjgsNTMuOWMtMS4zLTEuMy0yLjktMS4zLTQuMiwwIGMtMSwxLTIsMS45LTIuOSwyLjljLTAuMywwLjMtMC41LDAuMy0wLjgsMC4xYy0wLjYtMC4zLTEuMy0wLjYtMS45LTFjLTIuOC0xLjgtNS4yLTQuMS03LjMtNi43Yy0xLTEuMy0yLTIuNy0yLjYtNC4yIGMtMC4xLTAuMy0wLjEtMC41LDAuMS0wLjhjMS0wLjksMS45LTEuOSwyLjktMi45YzEuMy0xLjMsMS4zLTIuOSwwLTQuM2MtMC44LTAuOC0xLjUtMS41LTIuMy0yLjNjLTAuOC0wLjgtMS42LTEuNi0yLjQtMi40IGMtMS4zLTEuMy0yLjktMS4zLTQuMiwwYy0xLDEtMS45LDItMi45LDIuOWMtMC45LDAuOS0xLjQsMi0xLjUsMy4yYy0wLjIsMiwwLjMsNCwxLjEsNS45YzEuNCwzLjksMy42LDcuNCw2LjMsMTAuNSBjMy42LDQuMyw3LjksNy43LDEzLDEwLjFjMi4zLDEuMSw0LjYsMS45LDcuMiwyLjFjMS44LDAuMSwzLjMtMC4zLDQuNS0xLjdjMC44LTAuOSwxLjgtMS44LDIuNy0yLjdjMS4zLTEuMywxLjMtMi45LDAtNC4zIEM2MC45LDU3LDU5LjMsNTUuNCw1Ny44LDUzLjlMNTcuOCw1My45eiBNNTcuOCw1My45Ii8+DQoJPHBhdGggZmlsbD0iIzZENkU3MSIgZD0iTTU2LjIsNDcuM2wzLTAuNWMtMC41LTIuOC0xLjgtNS4zLTMuOC03LjNjLTIuMS0yLjEtNC44LTMuNC03LjctMy45bC0wLjQsM2MyLjMsMC4zLDQuMywxLjMsNiwzIEM1NC44LDQzLjIsNTUuOCw0NS4yLDU2LjIsNDcuM0w1Ni4yLDQ3LjN6IE01Ni4yLDQ3LjMiLz4NCgk8cGF0aCBmaWxsPSIjNkQ2RTcxIiBkPSJNNjEsMzQuMWMtMy41LTMuNS03LjktNS43LTEyLjgtNi40bC0wLjQsM2M0LjIsMC42LDguMSwyLjUsMTEuMSw1LjVjMi45LDIuOSw0LjgsNi41LDUuNCwxMC41bDMtMC41IEM2Ni40LDQxLjcsNjQuMywzNy41LDYxLDM0LjFMNjEsMzQuMXogTTYxLDM0LjEiLz4NCjwvc3ZnPg==");
 }
 .form-input:focus:not(
     [readonly],
@@ -130,6 +768,58 @@ body {
   ) {
   -webkit-box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
   box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+}
+.form-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.form-input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-moz-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-ms-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form-input::-ms-input-placeholder {
+  opacity: 1;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+.form {
+  position: relative;
+}
+.form__field {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.form__required {
+  position: relative;
+}
+.form__required::after {
+  content: "*";
+  position: absolute;
+  top: 0;
+  right: 6px;
+  color: #f00;
+}
+.form__response {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+.form__response:empty {
+  display: none;
 }
 .hero {
   background-repeat: no-repeat;
@@ -207,16 +897,800 @@ body {
   box-shadow: 6px 0 0 #000, -6px 0 0 #000;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+.hero--blurry-house {
+  background-image: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  position: relative;
+  color: #181b28;
+  padding: 110px 0 16px;
+}
+.hero--blurry-house-images {
+  background-image: url("https://onecam.ru/src/img/bg-image__blurry-house.webp");
+}
+.hero--blurry-house-images::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMiAyIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj4NCiAgICA8cG9seWdvbiBwb2ludHM9IjIsMCAyLDIgMCwyIiBmaWxsPSIjZGQxODJiIi8+DQo8L3N2Zz4=")
+    0 0/100% 100% no-repeat;
+  height: 46%;
+  width: 91%;
+}
+@media (max-width: 1200px) {
+  .hero--blurry-house-images::before {
+    height: 30%;
+    width: 150%;
+  }
+}
+@media (max-width: 900px) {
+  .hero--blurry-house-images::before {
+    height: 27%;
+    width: 200%;
+  }
+}
+@media (max-width: 768px) {
+  .hero--blurry-house-images::before {
+    height: 36%;
+  }
+}
+.hero--blurry-house-images .hero__camera {
+  position: relative;
+}
+.hero--blurry-house-images .hero__camera::before {
+  content: "";
+  background: url("https://onecam.ru/src/img/hero__camera.webp") 50% 50% / contain no-repeat;
+  position: absolute;
+  top: -90px;
+  left: -120px;
+  width: 728px;
+  height: 410px;
+}
+@media (max-width: 1200px) {
+  .hero--blurry-house-images .hero__camera::before {
+    width: 500px;
+    left: -90px;
+  }
+}
+@media (max-width: 768px) {
+  .hero--blurry-house-images .hero__camera::before {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: -20px 0 -60px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero--blurry-house {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .hero--blurry-house {
+    padding-top: 30px;
+  }
+}
+.hero--blurry-house .container {
+  position: relative;
+}
+.hero--blurry-house .heading {
+  margin-bottom: 1.5em;
+}
+.hero--blurry-house .hero__text {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.hero--blurry-house .hero__text span {
+  font-weight: 600;
+  line-height: 0.4em;
+}
+@media (min-width: 769px) {
+  .hero--blurry-house .hero__text span {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 769px) {
+  .hero--blurry-house .hero__text span b {
+    font-size: 1.25em;
+  }
+}
+.hero--blurry-house .hero__line-text {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30px;
+  line-height: 1.2;
+}
+.hero--blurry-house-images .hero__line-text {
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .hero--blurry-house .hero__line-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero--blurry-house .hero__line-text {
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.hero--blurry-house .hero__line-text span {
+  font-size: 2.5em;
+}
+@media (min-width: 769px) {
+  .hero--blurry-house .hero__line-text br {
+    display: none;
+  }
 } /* PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */ /* PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+.plate {
+  margin: 16px auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  -webkit-box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  -webkit-transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  position: relative;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.plate--product {
+  max-width: 370px;
+}
+@media (min-width: 769px) {
+  .plate--fx-lift:focus-within {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 6px 26px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 6px 26px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+@media (min-width: 769px) {
+  .plate--fx-lift:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 6px 26px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 6px 26px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+.plates-group {
+  font-size: 16px;
+}
+.plates-group p {
+  font-size: inherit;
+}
+.plates-group svg {
+  width: auto;
+  max-width: 80px;
+  height: 60px;
+}
+.plates-group__item {
+  width: 100%;
+  background-color: #efeeef;
+}
+.bg-gray .plates-group__item {
+  background-color: #fff;
+}
+.product {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+}
+.product__title {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px 10px;
+  text-align: center;
+}
+.product__title-inner {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+.product__secondary-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.product__secondary-desc {
+  font-size: 16px;
+  text-align: center;
+}
+.product__image {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px;
+}
+.product__image picture {
+  width: 100%;
+}
+.product__image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 230px;
+}
+.product__image--cover {
+  padding: 0;
+  max-height: initial;
+  background-color: #cecece;
+}
+.plate .product__image--cover img {
+  margin-left: -1px;
+  margin-right: -1px;
+  width: calc(100% + 2px);
+  max-width: calc(100% + 2px);
+}
+.product__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 24px 16px;
+}
+.product__desc {
+  font-size: 15px;
+}
+.product__desc ul {
+  font-size: inherit;
+  margin-bottom: 1em;
+}
+.product__desc ul:last-child {
+  margin-bottom: 0;
+}
+.product__price {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 24px;
+  line-height: 1.3;
+  margin-top: auto;
+}
+.product__price span {
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  color: #dd182b;
+}
+.product__btn {
+  padding-top: 16px;
+  text-align: center;
+  margin-top: auto;
+}
+.product__price + .product__btn {
+  margin-top: 0;
+}
+.bg-gray {
+  background-color: #efeeef;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+.object-fit-wrap {
+  position: relative;
+  padding-top: 66%;
+  width: 100%;
+}
+.object-fit-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 /*# sourceMappingURL=app.css.map */
+
 </style>
+
 <section class="section hero hero--house">
-    <div class="container">
-        <div class="hero__title">
-            <span class="hero__title-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                Theo dõi sự an toàn của những thứ có giá trị nhất </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                từ &ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;mọi nơi trên thế giới
-            </font></font></span>
-        </div>
-    </div>
+  <div class="container">
+      <div class="hero__title">
+          <span class="hero__title-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Theo dõi sự an toàn của những thứ có giá trị nhất </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              từ &ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;mọi nơi trên thế giới
+          </font></font></span>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="section pv-6">
+  <div class="container">
+      <div class="heading heading--h1 text-left"><h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Video giám sát trong nhà</font></font></h1></div>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Video giám sát trong nhà là sự an tâm của bạn đối với đắt tiền và có giá trị nhất. </font><font style="vertical-align: inherit;">Dù bạn ở đâu, bạn luôn có thể nhìn thấy tình hình trong nhà từ bất cứ đâu trên thế giới.</font></font></p>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chúng tôi lắp đặt camera và hệ thống giám sát video không chỉ xung quanh chu vi của các khu định cư mà còn có nhiều kinh nghiệm trong việc lắp đặt camera trong nhà và ngoài trời có độ phân giải cao ở các khu vực tư nhân và lân cận. </font><font style="vertical-align: inherit;">Các giải pháp đề xuất đã được thử nghiệm bằng thực tế làm việc với nhiều khu định cư nhỏ và các tòa nhà tư nhân.</font></font></p>
+  </div>
+</section>
+
+
+<section class="section bg-gray">
+  <div class="container ovh">
+      <div class="row mh-n2 flex-main-center flex-cross-center">
+          <div class="col-10 col-sm-8 col-md-6 pv-1 ph-2 flex flex-main-center flex-cross-start">
+              
+              
+          
+                  <picture>
+                      <source srcset="https://onecam.ru/src/img/phone_1.webp" type="image/webp">
+                      <img class="img-responsive" src="https://onecam.ru/src/img/phone_1.png" alt="">
+                  </picture>
+              </div>
+          <div class="col-12 col-md-6 pv-1 ph-2">
+              <div class="heading heading--h3 heading--simple heading--no-dash text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thực hiện đúng phương pháp chăm sóc trẻ</font></font></div>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Con cái là giá trị quan trọng nhất.</font></font></p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container ovh">
+      <div class="row mh-n2 flex-main-center flex-cross-center">
+          <div class="col-12 col-md-6 pv-1 ph-2 order-1 order-md-0">
+              <div class="heading heading--h3 heading--simple heading--no-dash text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giám sát hoạt động của các dịch vụ đặc biệt và au pair</font></font></div>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tránh các sự cố khó chịu liên quan đến việc mất vật có giá trị.</font></font></p>
+          </div>
+          <div class="col-10 col-sm-8 col-md-6 pv-1 ph-2 order-0 order-md-1 flex flex-main-center flex-cross-start">
+              
+              
+          
+                  <picture>
+                      <source srcset="https://onecam.ru/src/img/phone_2.webp" type="image/webp">
+                      <img class="img-responsive" src="https://onecam.ru/src/img/phone_2.png" alt="">
+                  </picture>
+              </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section bg-gray">
+  <div class="container ovh">
+      <div class="row mh-n2 flex-main-center flex-cross-center">
+          <div class="col-10 col-sm-8 col-md-6 pv-1 ph-2 flex flex-main-center flex-cross-start">
+              
+              
+          
+                  <picture>
+                      <source srcset="https://onecam.ru/src/img/phone_3.webp" type="image/webp">
+                      <img class="img-responsive" src="https://onecam.ru/src/img/phone_3.png" alt="">
+                  </picture>
+              </div>
+          <div class="col-12 col-md-6 pv-1 ph-2">
+              <div class="heading heading--h3 heading--simple heading--no-dash text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Theo dõi xem những chiếc xe nào đang kéo đến nhà bạn</font></font></div>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Một sự cố dễ ngăn chặn hơn là điều tra.</font></font></p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container ovh">
+      <div class="row mh-n2 flex-main-center flex-cross-center">
+          <div class="col-12 col-md-6 pv-1 ph-2 order-1 order-md-0">
+              <div class="heading heading--h3 heading--simple heading--no-dash text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giám sát chất lượng và thời gian thực hiện công việc của nhà phát triển</font></font></div>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kiểm soát hiện đại đối với công việc được thực hiện bởi nhà phát triển đảm bảo chất lượng hoạt động tiếp theo của cơ sở.</font></font></p>
+          </div>
+          <div class="col-10 col-sm-8 col-md-6 pv-1 ph-2 order-0 order-md-1 flex flex-main-center flex-cross-start">
+              
+              
+          
+                  <picture>
+                      <source srcset="https://onecam.ru/src/img/phone_4.webp" type="image/webp">
+                      <img class="img-responsive" src="https://onecam.ru/src/img/phone_4.png" alt="">
+                  </picture>
+              </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section bg-gray pv-6">
+  <div class="container">
+      <div class="heading heading--h2 heading--no-dash text-left"><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các giai đoạn lắp đặt video giám sát trong nhà riêng</font></font></h2></div>
+      <div class="row plates-group">
+<div class="col-12 col-sm-6 col-lg-3 pv-1 flex">
+  <div class="plates-group__item p-2 flex-item">
+      <div class="pb-2">
+                              <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="53.122" height="53.122" viewBox="0 0 53.122 53.122"><path d="M11.509 19.235l.919-7.041 3.362-4.283 3.8-3.124 3.4-1.48L24.401.994h4.068l1.471 2.313 1.816.666 4.021 1.819 2.482 3.079 2.935 4.526.77 4-.77 1.836H11.509z" class="features-icon__fill-color-main" fill="#dd182b"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M50.466 44.091c-5.285-2.802-9.338-4.372-12.947-4.972l.373-.513a.689.689 0 0 0 .177-.708l-.83-3.319a18.94 18.94 0 0 0 3.486-10.67v-3.546h2.656a.885.885 0 0 0 0-1.771h-.885v-.885A15.392 15.392 0 0 0 30.987 2.833v-.177A2.664 2.664 0 0 0 28.331 0H24.79a2.664 2.664 0 0 0-2.656 2.656v.177a15.392 15.392 0 0 0-11.51 14.874v.885h-.885a.885.885 0 1 0 0 1.771h2.656v3.541a18.941 18.941 0 0 0 3.486 10.67l-.83 3.319a1.065 1.065 0 0 0 .177.708l.373.513c-3.608.6-7.661 2.174-12.946 4.976A4.709 4.709 0 0 0 0 48.429v3.807a.836.836 0 0 0 .885.883h51.351a.836.836 0 0 0 .883-.883v-3.807a5.076 5.076 0 0 0-2.653-4.338zm-24.436-.819l.536-1.206 1.323 2.911.865 1.947h-4.318zm-2.267 5.423h5.589l.506 2.656h-6.626zm12.094-12.4l.354 1.594-.9 1.242a.789.789 0 0 0-.158.175l-3.683 5.1-1.169 1.6-2.387-5.37a12.792 12.792 0 0 0 7.457-3.839l.068-.068.016-.017q.202-.193.402-.412zm-1.153-29.82l.292.2a15.394 15.394 0 0 1 2.986 2.887l-4.073.8zm-15.492 3.884l-4.073-.8a15.392 15.392 0 0 1 2.986-2.887q.144-.1.292-.2zm-6.817 7.349a13.428 13.428 0 0 1 1.667-6.521l6.125 1.209h.177a2.082 2.082 0 0 0 .708-.177.714.714 0 0 0 .266-.8l-1.219-5.913a14.685 14.685 0 0 1 2.012-.79v2.367a.885.885 0 0 0 1.771 0V2.656a.887.887 0 0 1 .885-.885h3.541a.887.887 0 0 1 .885.885v4.427a.885.885 0 0 0 1.771 0V4.719a14.672 14.672 0 0 1 2.076.821l-1.191 5.8a1.236 1.236 0 0 0 .266.8.8.8 0 0 0 .62.266h.177l6.087-1.292a13.427 13.427 0 0 1 1.706 6.593v.885h-28.33v-.885zm1.771 2.656h24.79v3.541a16.312 16.312 0 0 1-3.313 9.9l-.052.017-.266.266a14.837 14.837 0 0 1-1.406 1.622 11.319 11.319 0 0 1-6.967 3.235 1 1 0 0 0-.391-.078.847.847 0 0 0-.369.079 10.011 10.011 0 0 1-4.391-1.327 14.383 14.383 0 0 1-4.006-3.533l-.266-.266-.052-.017a16.312 16.312 0 0 1-3.313-9.9v-3.54zm11.045 20.28l-2.392 5.37-1.169-1.6-3.683-5.1a1.534 1.534 0 0 0-.092-.084l-.971-1.333.354-1.594c.12.129.242.255.365.379a12.848 12.848 0 0 0 7.588 3.961zm-23.44 7.785a3.039 3.039 0 0 1 1.682-2.745c5.643-3 9.706-4.5 13.325-4.952l5.283 7.265-.671 3.354H1.771zm49.58 2.922h-19.62l-.671-3.354 5.341-7.343c3.606.544 7.741 2.048 13.268 4.942a3.276 3.276 0 0 1 1.682 2.833z"></path></svg>
+                      </div>
+      <div>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kỹ sư của chúng tôi đến thăm cơ sở miễn phí và sau khi lắng nghe mong muốn của bạn, sẽ xác định số lượng và vị trí của các camera.</font></font></p>
+      </div>
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 pv-1 flex">
+  <div class="plates-group__item p-2 flex-item">
+      <div class="pb-2">
+                              <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="53.122" height="53.122" viewBox="0 0 53.122 53.122"><path d="M20.709 23.531l6.432-7.617 4.226-5.17 4.887-4.089 4.968-4.706L43.888.927l2.642 2.441v3.286l-7.335 6.544-13.99 13.535h-1.241z" class="features-icon__fill-color-main" fill="#dd182b"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M47.004 37.489a.78.78 0 0 0-.847.165l-8.521 8.521a.78.78 0 0 0 .551 1.331h8.521a.78.78 0 0 0 .78-.78v-8.517a.78.78 0 0 0-.484-.72zm-6.937 8.465l5.859-5.859v5.859z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M52.64 24.989a.78.78 0 0 0-.85.169l-2.335 2.335V11.617a.78.78 0 0 0-.78-.78h-5.99l2.175-2.174 2.1-2.1a2.378 2.378 0 0 0 0-3.362L44.533.781a2.378 2.378 0 0 0-3.362 0l-2.1 2.1-2.53 2.53-5.427 5.427H6.912V3.124a.78.78 0 0 0-.78-.78A6.14 6.14 0 0 0 0 8.477v33.112a.782.782 0 0 0 .018.168 5.906 5.906 0 0 0 5.888 5.457h23.826l-4.487 4.487a.78.78 0 0 0 .551 1.331h26.546a.78.78 0 0 0 .78-.78V25.711a.78.78 0 0 0-.482-.722zm-10.366-23.1a.819.819 0 0 1 1.157 0l2.423 2.423a.819.819 0 0 1 0 1.157l-1.546 1.54-3.58-3.58zm-2.648 2.643l3.58 3.58-1.431 1.43L38.2 5.963zm11.937 29.94h-1.439a.78.78 0 0 0 0 1.559h1.439v2.35h-1.439a.78.78 0 0 0 0 1.559h1.439v2.349h-1.439a.78.78 0 0 0 0 1.559h1.439v2.35h-1.439a.78.78 0 0 0 0 1.559h1.439v3.719H27.678l7.876-7.876a.78.78 0 0 0-1.1-1.1l-3.16 3.16H5.906a4.322 4.322 0 0 1-4.343-4.207q.007-.222.034-.44.013-.1.031-.206v-.023q.016-.091.037-.182l.012-.05q.018-.077.038-.152l.023-.082a3.21 3.21 0 0 1 .076-.235l.029-.081c.019-.051.039-.1.06-.152l.018-.043c.027-.062.054-.124.084-.185v-.008A4.59 4.59 0 0 1 5.2 37.116h.012c.065-.013.13-.024.2-.035l.033-.006c.059-.009.119-.016.179-.023l.05-.006c.058-.006.116-.01.174-.013h.055q.115-.006.231-.006a.78.78 0 0 0 .78-.78v-5.658a.78.78 0 1 0-1.559 0v4.923a6.09 6.09 0 0 0-3.5 1.695c-.1.1-.2.2-.291.306V8.477A4.581 4.581 0 0 1 5.353 3.97v23.5a.78.78 0 1 0 1.559 0V12.397h22.643l-4.31 4.31a.78.78 0 0 0 1.1 1.1l5.641-5.641 5.1-5.1 3.58 3.58-.42.42L24.53 26.789l-3.58-3.58 3.1-3.1a.78.78 0 0 0-1.1-1.1l-3.65 3.65a.783.783 0 0 0-.055.061l-.016.022c-.011.015-.022.029-.032.045l-.016.027a.477.477 0 0 0-.024.044l-.014.03-.019.046-.007.016-1.519 4.3-1.041 2.939a.788.788 0 0 0-.031.119h-2.593a.78.78 0 0 0 0 1.559h21.593a.78.78 0 1 0 0-1.559H20.034l4.755-1.679h.012l.055-.023.021-.01c.019-.009.037-.02.055-.031l.018-.01a.686.686 0 0 0 .055-.039l.013-.01a.783.783 0 0 0 .063-.056l16.045-16.053H47.9v16.657L36.743 40.208a.78.78 0 0 0 0 1.1.8.8 0 0 0 .059.054.779.779 0 0 0 1.043-.054l13.717-13.719zM23.1 27.567l-2.233.788-1.488-1.488.788-2.233z"></path></svg>
+                      </div>
+      <div>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ông thực hiện các phép đo và tính toán, tư vấn về cài đặt và khối lượng công việc cần thiết.</font></font></p>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kết quả là, bạn nhận được một đề nghị tính toán.</font></font></p>
+      </div>
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 pv-1 flex">
+  <div class="plates-group__item p-2 flex-item">
+      <div class="pb-2">
+                              <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="53.48" height="35.47" viewBox="0 0 53.48 35.47"><path class="features-icon__fill-color-main features-icon__stroke-color-main" fill="#dd182b" stroke="#dd182b" d="M3.33 1.59h5.85l1.53 2.52H17V7l-2.94 1.35v2.48h-3.35l-2.27 1.78h-2.9l-3.26-1.78 2-.72L7 8.35V5.53L4.24 4.11h-2.9l.94-1.89zM39 3.67h3.19l2-1.73L47.84.72l2.87 1.22L52 3.67h-2.88l-2 2-1 1.45 1 2.75H52l-2.29 1.8-2.65.95-2.26-.95-1.48-1.8-1.22.82H39V3.67"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M48.87 5.32h2.46a1.76 1.76 0 0 0 1.62-1 1.73 1.73 0 0 0-.23-1.85 6.66 6.66 0 0 0-10.48.22h-3.4a3.52 3.52 0 0 0-6.08-1.43 3.51 3.51 0 0 0-4.94-.42 4.68 4.68 0 0 0-.38.39 3.5 3.5 0 0 0-4.93-.39 3.59 3.59 0 0 0-.39.39 3.51 3.51 0 0 0-5-.38A3.55 3.55 0 0 0 16 2.66h-5.12a6.67 6.67 0 0 0-9.33-1.32A6.36 6.36 0 0 0 .4 2.45a1.71 1.71 0 0 0-.23 1.84 1.76 1.76 0 0 0 1.62 1h2.46A1.9 1.9 0 0 1 6.17 7 1.78 1.78 0 0 1 4.4 8.87H1.84a1.73 1.73 0 0 0-1.61 1 1.78 1.78 0 0 0 .3 1.93 6.66 6.66 0 0 0 9.4.65 6.89 6.89 0 0 0 .91-1h1.47l-1.2 3a3.61 3.61 0 0 0 .16 3l5.35 8.61a1.71 1.71 0 0 1 .19.8v6.78a1.78 1.78 0 0 0 1.77 1.78H31a1.78 1.78 0 0 0 1.77-1.78v-4.59a1.77 1.77 0 0 1 .19-.79l3.3-4.46a13.22 13.22 0 0 0 2.68-6.9v-5.37h3.31a6.66 6.66 0 0 0 9.35 1.21 6.82 6.82 0 0 0 1-.9 1.8 1.8 0 0 0 .3-1.93 1.74 1.74 0 0 0-1.61-1h-2.57a1.73 1.73 0 0 1-1.25-.52A1.78 1.78 0 0 1 47 7a1.9 1.9 0 0 1 1.87-1.68zM35.42 1.78a1.78 1.78 0 0 1 1.78 1.77v6.21a1.78 1.78 0 0 1-3.55 0V3.55a1.77 1.77 0 0 1 1.77-1.77zm-5.31 0a1.77 1.77 0 0 1 1.77 1.77v6.21a1.78 1.78 0 0 1-3.55 0V3.55a1.78 1.78 0 0 1 1.78-1.77zm-5.32 0a1.77 1.77 0 0 1 1.77 1.77v2.84a2.48 2.48 0 0 0-.93-.18H23V3.55a1.78 1.78 0 0 1 1.78-1.77zm-5.32 0a1.77 1.77 0 0 1 1.77 1.77v2.66H17.7V3.55a1.77 1.77 0 0 1 1.77-1.77zM5.55 12.35a4.92 4.92 0 0 1-3.7-1.69l-.66.59.65-.61H4.4A3.54 3.54 0 0 0 7.94 7.1a2.17 2.17 0 0 0 0-.26 3.64 3.64 0 0 0-3.69-3.29H1.76a4.89 4.89 0 0 1 3.79-1.8 5.17 5.17 0 0 1 5.05 5.31 5.18 5.18 0 0 1-5.05 5.29zm6.31-2.6a7.24 7.24 0 0 0 0-5.32h4v2.06A4.41 4.41 0 0 0 13.32 9l-.3.76zm25.31 7a11.46 11.46 0 0 1-2.34 6l-3.35 4.52-.06.1a3.57 3.57 0 0 0-.42 1.68v4.64H18.58v-6.78a3.55 3.55 0 0 0-.41-1.66l-5.35-8.61a1.77 1.77 0 0 1-.06-1.46L15 9.66A2.64 2.64 0 0 1 17.44 8h8.19a.87.87 0 0 1 .69.32.86.86 0 0 1 .19.69c-.38 2.27-1.86 3.42-4.38 3.42h-2.66a.88.88 0 0 0-.32 1.71c.07 0 6.52 2.53 6.52 8a.9.9 0 0 0 .86.92.88.88 0 0 0 .91-.86.06.06 0 0 0 0-.06 9.85 9.85 0 0 0-4.59-8 5.54 5.54 0 0 0 4.41-2.31 3.51 3.51 0 0 0 4.9.77 3.47 3.47 0 0 0 .6-.55 3.48 3.48 0 0 0 4.43.73V16a7.42 7.42 0 0 1 0 .82zm1.8-7V4.44h2.27a7.24 7.24 0 0 0 0 5.32zm7.25-.15a3.5 3.5 0 0 0 2.5 1h2.54a4.92 4.92 0 0 1-3.69 1.69 5.18 5.18 0 0 1-5-5.29 5.17 5.17 0 0 1 5-5.28 4.91 4.91 0 0 1 3.77 1.77h-2.47a3.63 3.63 0 0 0-3.68 3.29 3.52 3.52 0 0 0 1 2.76z"></path></svg>
+                      </div>
+      <div>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vào thời điểm thuận tiện cho bạn, những người lắp đặt sẽ đến trang web và thực hiện công việc lắp đặt và lắp đặt camera.</font></font></p>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thực hiện thiết lập và thử nghiệm hệ thống.</font></font></p>
+      </div>
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 pv-1 flex">
+  <div class="plates-group__item p-2 flex-item">
+      <div class="pb-2">
+                              <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="53.122" height="53.122" viewBox="0 0 53.122 53.122"><path class="features-icon__fill-color-dark" fill="#181b28" d="M52.237 0H.885A.885.885 0 0 0 0 .885v17.708h1.771V1.771h49.58v19.478H20.363v1.771h31.873a.885.885 0 0 0 .885-.885V.885A.885.885 0 0 0 52.237 0z"></path><path class="features-icon__fill-color-main" fill="#dd182b" d="M29.217 4.427h17.707v1.771H29.217zm2.656 5.312H49.58v1.771H31.873zm-3.541 5.312h17.707v1.771H28.332z"></path><path class="features-icon__fill-color-dark" fill="#181b28" d="M28.261 7.633a2.857 2.857 0 0 0-3.735-1.541l-.074.032-7.179 3.724a4.378 4.378 0 0 0 .435-1.881 4.427 4.427 0 1 0-7.946 2.656h-.037a6.076 6.076 0 0 0-5.644 3.931l-2.363 8.147a2.836 2.836 0 1 0 5.324 1.95l.926-2.947v12.814a4.414 4.414 0 0 0-5.745 6.68A4.079 4.079 0 0 0 0 44.817v7.419a.885.885 0 0 0 .885.885h8.854a.885.885 0 0 0 .885-.885v-7.419a4.069 4.069 0 0 0-1.58-3.205h6.7a4.069 4.069 0 0 0-1.58 3.205v7.419a.885.885 0 0 0 .885.885H23.9a.885.885 0 0 0 .885-.885v-7.419a4.079 4.079 0 0 0-2.223-3.618 4.423 4.423 0 0 0-3.974-7.5V15.588l8.128-4.22a2.857 2.857 0 0 0 1.545-3.735zM13.28 5.312a2.656 2.656 0 1 1-2.656 2.656 2.656 2.656 0 0 1 2.656-2.656zM5.312 35.381a2.656 2.656 0 1 1-2.656 2.66 2.656 2.656 0 0 1 2.656-2.66zm3.542 15.97H1.771v-6.534a2.323 2.323 0 0 1 2.32-2.32h2.442a2.323 2.323 0 0 1 2.32 2.32zm14.166-6.534v6.534h-7.083v-6.534a2.323 2.323 0 0 1 2.32-2.32H20.7a2.323 2.323 0 0 1 2.319 2.32zm-3.542-9.436a2.656 2.656 0 1 1-2.656 2.66 2.659 2.659 0 0 1 2.656-2.66zM26.641 9.11a1.139 1.139 0 0 1-.668.655l-8.673 4.5a.886.886 0 0 0-.478.786v19.467a4.367 4.367 0 0 0-1.378 5.323h-1.278V24.79H12.4v15.051H9.346a4.386 4.386 0 0 0 .39-1.771V15.941a.885.885 0 0 0-1.73-.265l-2.641 8.407a1.065 1.065 0 0 1-1.477.589 1.087 1.087 0 0 1-.494-1.406l2.363-8.146a4.277 4.277 0 0 1 3.967-2.725h6.269a.882.882 0 0 0 .408-.1l8.8-4.568a1.09 1.09 0 0 1 1.393.516 1.077 1.077 0 0 1 .047.867zM36.732 41.2a4.427 4.427 0 1 0-6.26-.082l.082.082a4.079 4.079 0 0 0-2.222 3.618v7.419a.885.885 0 0 0 .885.885h8.854a.885.885 0 0 0 .885-.885v-7.419a4.079 4.079 0 0 0-2.224-3.618zm-3.089-5.817a2.656 2.656 0 1 1-2.656 2.656 2.656 2.656 0 0 1 2.657-2.657zm3.543 15.967h-7.083v-6.532a2.323 2.323 0 0 1 2.32-2.32h2.442a2.323 2.323 0 0 1 2.32 2.32zM50.897 41.2a4.427 4.427 0 1 0-6.26-.082l.082.082a4.079 4.079 0 0 0-2.222 3.618v7.419a.885.885 0 0 0 .885.885h8.854a.885.885 0 0 0 .885-.885v-7.419a4.079 4.079 0 0 0-2.224-3.618zm-3.089-5.817a2.656 2.656 0 1 1-2.656 2.656 2.656 2.656 0 0 1 2.657-2.657zm3.543 15.967h-7.083v-6.532a2.323 2.323 0 0 1 2.32-2.32h2.442a2.323 2.323 0 0 1 2.32 2.32z"></path></svg>
+                      </div>
+      <div>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chúng tôi đào tạo bạn sử dụng hệ thống.</font></font></p>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn nhận việc và thanh toán.</font></font></p>
+      </div>
+  </div>
+</div>
+</div>        </div>
+</section>
+
+
+
+
+<section class="section pv-6">
+  <div class="container">
+      <div class="heading heading--h2 heading--no-dash text-left"><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giải pháp lắp đặt camera điển hình</font></font></h2></div>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tất cả các biểu giá đều hỗ trợ xem các chương trình phát sóng từ camera qua điện thoại theo thời gian thực.</font></font></p>
+
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 flex">
+              <div class="plate plate--product plate--fx-lift">
+                  <div class="product">
+                      <div class="product__title" style="height: 71px;">
+                          <div class="product__title-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trẻ em</font></font></div>
+                      </div>
+                      <div class="product__image product__image--cover">
+                          <div class="object-fit-wrap">
+                              
+                              
+                          
+                                  <picture>
+                                      <source srcset="https://onecam.ru/src/img/tariff-pic-1.webp" type="image/webp">
+                                      <img src="https://onecam.ru/src/img/tariff-pic-1.jpg" alt="">
+                                  </picture>
+                              </div>
+                      </div>
+                      <div class="product__body">
+                          <div class="product__desc">
+                              <ul>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 camera Full HD ngoài trời (2MP) phía trên cửa ra vào</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 camera vòm HD trong nhà (2MP) mỗi phòng</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DVR + Ổ cứng 500 GB (lưu trữ bản ghi lên đến 5 ngày)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sức mạnh không bị gián đoạn</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt và thiết lập</font></font></li>
+                              </ul>
+                          </div>
+                          <div class="product__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29 970</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                          <div class="product__btn"><button type="button" class="btn btn--w-md" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="ready-tariffs__kids"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 flex">
+              <div class="plate plate--product plate--fx-lift">
+                  <div class="product">
+                      <div class="product__title" style="height: 71px;">
+                          <div class="product__title-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chu vi</font></font></div>
+                      </div>
+                      <div class="product__image product__image--cover">
+                          <div class="object-fit-wrap">
+                              
+                              
+                          
+                                  <picture>
+                                      <source srcset="https://onecam.ru/src/img/tariff-pic-2.webp" type="image/webp">
+                                      <img src="https://onecam.ru/src/img/tariff-pic-2.jpg" alt="">
+                                  </picture>
+                              </div>
+                      </div>
+                      <div class="product__body">
+                          <div class="product__desc">
+                              <ul>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 camera Full HD (2MP) ngoài trời ở các góc nhà phủ sóng toàn diện</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chiếu sáng hồng ngoại</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DVR + 1TB HDD (lưu trữ bản ghi lên đến 5 ngày)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sức mạnh không bị gián đoạn</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt và thiết lập</font></font></li>
+                              </ul>
+                          </div>
+                          <div class="product__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">69 200</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                          <div class="product__btn"><button type="button" class="btn btn--w-md" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="ready-tariffs__perimeter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 flex">
+              <div class="plate plate--product plate--fx-lift">
+                  <div class="product">
+                      <div class="product__title" style="height: 71px;">
+                          <div class="product__title-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phức tạp</font></font></div>
+                      </div>
+                      <div class="product__image product__image--cover">
+                          <div class="object-fit-wrap">
+                              
+                              
+                          
+                                  <picture>
+                                      <source srcset="https://onecam.ru/src/img/tariff-pic-3.webp" type="image/webp">
+                                      <img src="https://onecam.ru/src/img/tariff-pic-3.jpg" alt="">
+                                  </picture>
+                              </div>
+                      </div>
+                      <div class="product__body">
+                          <div class="product__desc">
+                              <ul>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 camera Full HD (2MP) ngoài trời ở các góc nhà phủ sóng toàn diện</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 camera vòm HD trong nhà (2MP) mỗi phòng</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chiếu sáng hồng ngoại</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DVR + 2TB HDD (lưu trữ bản ghi lên đến 5 ngày)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Khả năng thêm camera vào hệ thống</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sức mạnh không bị gián đoạn</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt và thiết lập</font></font></li>
+                              </ul>
+                          </div>
+                          <div class="product__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">93 100</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> VND</font></font></div>
+                          <div class="product__btn"><button type="button" class="btn btn--w-md" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="ready-tariffs__complex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 flex">
+              <div class="plate plate--product plate--fx-lift">
+                  <div class="product">
+                      <div class="product__title" style="height: 71px;">
+                          <div class="product__title-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phức tạp cộng</font></font></div>
+                      </div>
+                      <div class="product__image product__image--cover">
+                          <div class="object-fit-wrap">
+                              
+                              
+                          
+                                  <picture>
+                                      <source srcset="https://onecam.ru/src/img/tariff-pic-4.webp" type="image/webp">
+                                      <img src="https://onecam.ru/src/img/tariff-pic-4.jpg" alt="">
+                                  </picture>
+                              </div>
+                      </div>
+                      <div class="product__body">
+                          <div class="product__desc">
+                              <ul>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 camera HD ngoài trời (4MP)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 camera khu vực đỗ xe (2MP)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 Camera HD Dome trong nhà (2MP)</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đầu ghi hình + ổ cứng 1TB</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Khả năng thêm camera vào hệ thống</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sức mạnh không bị gián đoạn</font></font></li>
+                                  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt và thiết lập</font></font></li>
+                              </ul>
+                          </div>
+                          <div class="product__price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">từ </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">121 000</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> chà</font></font></div>
+                          <div class="product__btn"><button type="button" class="btn btn--w-md" data-popup-target="simple-request" data-popup-title="Заказать" data-popup-form-action="request-order" data-popup-form-item="ready-tariffs__complex-plus"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">để đặt hàng</font></font></button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+<section class="section bg-gray">
+  <div class="container">
+      <div class="heading heading--h2 heading--no-dash text-left"><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chúng tôi sẽ tính toán ước tính cho giám sát video </font></font><span class="text-color-main"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trong 1 giờ</font></font></span></h2></div>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để lại thông tin liên lạc của bạn, chúng tôi sẽ liên hệ với bạn và giúp bạn tìm ra giải pháp cho các nhiệm vụ được yêu cầu.</font></font></p>
+      <form class="form js-form" method="post" action="/index/form">
+          <div class="form__response js-form__response"></div>
+          <input type="hidden" name="_action" value="callback">
+          <div class="row flex-main-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="form__field form__required">
+                      <input class="form-input form-input--bordered form-input--icon-person" autocomplete="off" type="text" name="name" value="" placeholder="Tên của bạn">
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="form__field form__required">
+                      <input class="form-input form-input--bordered form-input--icon-phone js-phone-mask" autocomplete="off" type="text" name="phone" value="" placeholder="số điện thoại của bạn">
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="form__field">
+                      <button class="btn btn--block form__button js-form__submit" type="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nộp đơn</font></font></button>
+                  </div>
+              </div>
+          </div>
+      </form>
+  </div>
+</section>
+
+<section class="section pv-6">
+  <div class="container">
+      <div class="heading heading--h2 heading--no-dash text-left"><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết bị, dụng cụ</font></font></h2></div>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Camera trong nhà và ngoài trời từ </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HiWatch</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hikvision</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">Mô hình sẽ được lựa chọn theo yêu cầu của bạn. </font><font style="vertical-align: inherit;">Dưới đây là một danh sách nhỏ các mô hình đang có nhu cầu lớn nhất:</font></font></p>
+
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-2CE10DFT-F.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-2CE10DFT-F.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hikvision</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-2CE10DFT-F</font></font></div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-2CE16F7T-AIT3Z.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-2CE16F7T-AIT3Z.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hikvision</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-2CE16F7T-AIT3Z</font></font></div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-T206.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-T206.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HiWatch</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-T206</font></font></div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-2CE56F7T-VPIT.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-2CE56F7T-VPIT.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hikvision</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-2CE56F7T-VPIT</font></font></div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-T213.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-T213.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HiWatch</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-T213</font></font></div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 flex flex-main-center pv-2">
+              <div class="product">
+                  <div class="product__image">
+                      
+                      
+                  
+                          <picture>
+                              <source srcset="https://onecam.ru/src/img/DS-2CD2022WD-I.webp" type="image/webp">
+                              <img src="https://onecam.ru/src/img/DS-2CD2022WD-I.png" alt="">
+                          </picture>
+                      </div>
+                  <div class="product__secondary-title text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hikvision</font></font></div>
+                  <div class="product__secondary-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DS-2CD2022WD-I</font></font></div>
+              </div>
+          </div>
+      </div>
+
+  </div>
 </section>
