@@ -122,6 +122,11 @@
             //Otherwise, database searches become impossible when words contain a character of this kind
             entity_encoding: "named",
             entities: '160,nbsp',
+            setup: function(editor) {
+		        editor.on('PreInit', function() {
+			        tinyMCE.activeEditor.schema.getNonEmptyElements().svg = {}
+		        });
+	        },
             @if (allowJavaScript)
             {
                 <text>
