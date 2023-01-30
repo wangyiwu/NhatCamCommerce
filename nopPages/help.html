@@ -1,0 +1,524 @@
+<style>
+    /* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+section {
+  display: block;
+}
+img {
+  border-style: none;
+}
+button {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-Regular.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-Bold.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  font-size: 1rem;
+  line-height: 1.618;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  color: #181b28;
+  background-color: #fff;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+::-moz-selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+::selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+h2 {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.4;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+.heading:first-child {
+  margin-top: 0;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 2.265em;
+  height: 0.2353em;
+  max-width: 77px;
+  max-height: 8px;
+  background-color: #dd182b;
+  margin: 0.55em auto 0;
+}
+.heading.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 769px) {
+  .heading.text-md-left::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+.heading--h2,
+h2 {
+  font-size: 34px;
+}
+@media (max-width: 1200px) {
+  .heading--h2,
+  h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .heading--h2,
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .heading--h2,
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .heading--h2,
+  h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  .heading--h2,
+  h2 {
+    font-size: 24px;
+  }
+}
+.heading h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  padding: 0;
+  margin: 0;
+}
+.heading h2::after {
+  display: none;
+}
+p {
+  font-size: 18px;
+  margin: 0 0 2em;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.container::before,
+.container::after {
+  content: "";
+  display: table;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.col-12 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 769px) {
+  .col-md-4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333333333336%;
+    flex: 0 0 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+@media (min-width: 769px) {
+  .col-md-8 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66666666666667%;
+    flex: 0 0 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+.hide {
+  display: none !important;
+}
+@media (min-width: 769px) {
+  .show-md {
+    display: block !important;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+@media (min-width: 769px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+}
+.pv-1 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+@media (min-width: 1025px) {
+  .pv-1 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+.section {
+  padding: 40px 0;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 425px) {
+  .section {
+    padding: 20px 0;
+  }
+}
+.btn {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  word-break: break-word;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 0;
+  padding: 21px 20px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  background-color: #dd182b;
+  -webkit-transition: background-color 0.1s ease-in-out,
+    opacity 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.btn:link,
+.btn:visited {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .btn {
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+}
+.btn:focus {
+  background-color: #ea3e4f;
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.btn:hover {
+  background-color: #ea4050;
+}
+.btn:active {
+  background-color: #ea3e4f;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #b9bfd5;
+}
+.btn--inverse,
+.btn--inverse:hover,
+.btn--inverse:active,
+.btn--inverse:focus,
+.btn--inverse:link,
+.btn--inverse:visited {
+  background-color: #fff;
+  color: #dd182b;
+}
+.btn--inverse:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.btn--inverse:hover {
+  background-color: #f7f7f7;
+}
+.btn--inverse:disabled {
+  color: #fff;
+  background-color: #b9bfd5;
+}
+.btn--bordered {
+  border: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .btn--bordered {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .btn--bordered {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+.btn--inverse.btn--bordered {
+  border-color: #dd182b;
+}
+.btn--transparent {
+  background-color: transparent;
+}
+.btn--transparent.btn--inverse:hover {
+  background-color: #fff;
+}
+.btn--transparent.btn--inverse:disabled:hover {
+  color: #fff;
+  background-color: #b9bfd5;
+}
+@supports (display: grid) {
+}
+@supports (display: grid) {
+}
+.form-input:focus:not(
+    [readonly],
+    .postfix-input:focus:not([readonly], .form-input--transparent),
+    .postfix-input--transparent
+  ) {
+  border-color: rgba(221, 24, 43, 0.2);
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.bg-main
+  .form-input:focus:not(
+    [readonly],
+    .bg-main
+      .postfix-input:focus:not([readonly], .bg-main .form-input--transparent),
+    .bg-main .postfix-input--transparent
+  ) {
+  -webkit-box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+  box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+}
+.out-of-bounds-pic--worker-2 {
+  margin-top: 30px;
+}
+.out-of-bounds-pic__relative {
+  position: relative;
+}
+.out-of-bounds-pic__absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.out-of-bounds-pic__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.out-of-bounds-pic--worker-2 .out-of-bounds-pic__image {
+  top: auto;
+  bottom: -40px;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  max-width: 100%;
+  max-height: 160%;
+} /* PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */ /* PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+.bg-gray {
+  background-color: #efeeef;
+}
+/*# sourceMappingURL=app.css.map */
+
+</style>
+
+
+<section class="section bg-gray out-of-bounds-pic out-of-bounds-pic--worker-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 pv-1 hide show-md out-of-bounds-pic__relative">
+                <div class="out-of-bounds-pic__absolute">
+                    
+                    
+                
+                        <picture>
+                            <source srcset="https://onecam.ru/src/img/bg-image__worker.webp" type="image/webp">
+                            <img class="out-of-bounds-pic__image" src="https://onecam.ru/src/img/bg-image__worker.webp" alt="">
+                        </picture>
+                    </div>
+            </div>
+            <div class="col-12 col-md-8 text-center text-md-left">
+                <div class="heading heading--h2 text-center text-md-left">
+                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn cần giúp đỡ?</font></font></h2>
+                </div>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    Chuyên gia của chúng tôi sẽ cho bạn biết về tất cả các chức năng </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    của hệ thống và trả lời các câu hỏi của bạn.
+                </font></font></p>
+                <button class="btn btn--bordered btn--transparent btn--inverse" type="button" data-popup-target="simple-request" data-popup-title="Заказать звонок" data-popup-form-action="callback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhận tư vấn miễn phí</font></font></button>
+            </div>
+        </div>
+    </div>
+</section>
