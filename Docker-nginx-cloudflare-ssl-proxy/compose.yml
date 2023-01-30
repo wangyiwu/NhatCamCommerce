@@ -1,0 +1,25 @@
+#docker run -d -v /root/cert:/root/cert --name nginx-ssl -p 443:443 -p 80:80 --network nginx-net -e SERVER_NAME=nhatcam.com -e PROXY_PASS=localhost:8080  -e PEM_PATH=/root/cert/cert.pem -e KEY_PATH=/root/cert/cert.key nginx-cloudflare-ssl-proxy:latest
+
+version: "3.5"
+
+services:
+  nginx-ssl:
+    image: nginx-cloudflare-ssl-proxy
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      - nginx-net
+    environment:
+      - 'SERVER_NAME=nhatcam.com'
+      - 'PROXY_PASS=nopcommerce:80'
+      - 'PEM_PATH=/root/cert/cert.pem'
+      - 'KEY_PATH=/root/cert/cert.key'
+    volumes:
+      - /root/cert:/root/cert
+
+networks:
+  nginx-net:
+    name: nhatcam-network
+    external: true
+

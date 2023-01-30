@@ -1,0 +1,222 @@
+<style>
+    /* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+section {
+  display: block;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-Regular.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/opensans/subset-OpenSans-Bold.woff2") format("woff2"),
+    url("/src/fonts/opensans/subset-OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  font-size: 1rem;
+  line-height: 1.618;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  color: #181b28;
+  background-color: #fff;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+::-moz-selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+::selection {
+  background-color: #dd182b;
+  color: #fff;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.container::before,
+.container::after {
+  content: "";
+  display: table;
+}
+.section {
+  padding: 40px 0;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 425px) {
+  .section {
+    padding: 20px 0;
+  }
+}
+@supports (display: grid) {
+}
+@supports (display: grid) {
+}
+.form-input:focus:not(
+    [readonly],
+    .postfix-input:focus:not([readonly], .form-input--transparent),
+    .postfix-input--transparent
+  ) {
+  border-color: rgba(221, 24, 43, 0.2);
+  -webkit-box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 24, 43, 0.2);
+}
+.bg-main
+  .form-input:focus:not(
+    [readonly],
+    .bg-main
+      .postfix-input:focus:not([readonly], .bg-main .form-input--transparent),
+    .bg-main .postfix-input--transparent
+  ) {
+  -webkit-box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+  box-shadow: 0 0 0 2px rgba(47, 49, 61, 0.4);
+}
+.hero {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #fff;
+}
+.hero--house {
+  background-image: url("https://onecam.ru/src/img/banner__house.webp");
+  background-color: #af8c9e;
+  min-height: 522px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@media (max-width: 1400px) {
+  .hero--house {
+    min-height: 440px;
+    background-image: url("https://onecam.ru/src/img/banner__house--1400.webp");
+  }
+}
+@media (max-width: 1150px) {
+  .hero--house {
+    min-height: 360px;
+    background-image: url("https://onecam.ru/src/img/banner__house--1150.webp");
+  }
+}
+@media (max-width: 650px) {
+  .hero--house {
+    min-height: 275px;
+    background-image: url("https://onecam.ru/src/img/banner__house--650.webp");
+  }
+}
+@media (max-width: 500px) {
+  .hero--house {
+    min-height: 200px;
+    background-image: url("https://onecam.ru/src/img/banner__house--500.webp");
+  }
+  .hero--house br {
+    display: none;
+  }
+}
+.hero--house .container {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+.hero--house .hero__title {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .hero--house .hero__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .hero--house .hero__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .hero--house .hero__title {
+    text-transform: none;
+  }
+}
+.hero--house .hero__title-text {
+  padding: 5px 0;
+  background-color: #000;
+  -webkit-box-shadow: 6px 0 0 #000, -6px 0 0 #000;
+  box-shadow: 6px 0 0 #000, -6px 0 0 #000;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+} /* PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */ /* PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+/*# sourceMappingURL=app.css.map */
+</style>
+<section class="section hero hero--house">
+    <div class="container">
+        <div class="hero__title">
+            <span class="hero__title-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Theo dõi sự an toàn của những thứ có giá trị nhất </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                từ &ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;mọi nơi trên thế giới
+            </font></font></span>
+        </div>
+    </div>
+</section>
