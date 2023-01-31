@@ -289,11 +289,51 @@ namespace Nop.Services.Catalog
         /// A task that represents the asynchronous operation
         /// The task result contains the price
         /// </returns>
+        /// 
+        decimal Normalize(decimal d)
+        {
+            int[] bits = decimal.GetBits(d);
+
+            int sign = bits[3] & (1 << 31);
+            int exp = (bits[3] >> 16) & 0x1f;
+
+            uint a = (uint)bits[2]; // Top bits
+            uint b = (uint)bits[1]; // Middle bits
+            uint c = (uint)bits[0]; // Bottom bits
+
+            while (exp > 0 && ((a % 5) * 6 + (b % 5) * 6 + c) % 10 == 0)
+            {
+                uint r;
+                a = DivideBy10((uint)0, a, out r);
+                b = DivideBy10(r, b, out r);
+                c = DivideBy10(r, c, out r);
+                exp--;
+            }
+
+            bits[0] = (int)c;
+            bits[1] = (int)b;
+            bits[2] = (int)a;
+            bits[3] = (exp << 16) | sign;
+            var result = new decimal(bits);
+            return result;
+        }
+
+        uint DivideBy10(uint highBits, uint lowBits, out uint remainder)
+        {
+            ulong total = highBits;
+            total <<= 32;
+            total = total | (ulong)lowBits;
+
+            remainder = (uint)(total % 10L);
+            return (uint)(total / 10L);
+        }
+
         public virtual async Task<string> FormatPriceAsync(decimal price, bool showCurrency,
             Currency targetCurrency, int languageId, bool priceIncludesTax, bool showTax)
         {
             //we should round it no matter of "ShoppingCartSettings.RoundPricesDuringCalculation" setting
             price = await _priceCalculationService.RoundPriceAsync(price, targetCurrency);
+            price = Normalize(price);
 
             var currencyString = GetCurrencyString(price, showCurrency, targetCurrency);
             if (!showTax)
