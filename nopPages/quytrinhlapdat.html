@@ -23,14 +23,14 @@ svg:not(:root) {
   overflow: hidden;
 }
 button,
-input {
+.container input {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 button,
-input {
+.container input {
   overflow: visible;
 }
 button {
@@ -566,7 +566,7 @@ ul li::before {
 .features-icon__fill-color-light {
   fill: #fff;
 }
-.form-input {
+.container .form-input {
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
   display: block;
@@ -614,6 +614,12 @@ ul li::before {
     background-size: 26px;
     padding-left: 54px;
   }
+  .container input[type="text"]{
+  padding-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+  
 }
 .form-input--icon-person {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgOTUgOTUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KCTxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENkU3MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik01My4yLDU2LjZjLTEuMS0wLjItMS4yLTMuMy0xLjItMy4zIHMzLjQtMy4zLDQuMS03LjhjMiwwLDMuMi00LjgsMS4yLTYuNGMwLjEtMS44LDIuNS0xMy44LTkuOS0xMy44Yy0xMi40LDAtMTAsMTIuMS05LjksMTMuOGMtMiwxLjctMC44LDYuNCwxLjIsNi40IGMwLjcsNC41LDQuMSw3LjgsNC4xLDcuOHMwLDMuMS0xLjIsMy4zYy0zLjcsMC42LTE3LjUsNi43LTE3LjUsMTMuM2g0Ni40QzcwLjcsNjMuMiw1Ni45LDU3LjEsNTMuMiw1Ni42TDUzLjIsNTYuNnogTTUzLjIsNTYuNiIvPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ2RTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjQ3LjUiIGN5PSI0Ny41IiByPSI0Ni41Ii8+DQo8L3N2Zz4=");
