@@ -17,9 +17,11 @@ services:
       - 'KEY_PATH=/root/cert/cert.key'
     volumes:
       - /root/cert:/root/cert
-
+      - nginx_data:/etc/nginx
 networks:
   nginx-net:
     name: nhatcam-network
     external: true
 
+volumes:
+  nginx_data:
