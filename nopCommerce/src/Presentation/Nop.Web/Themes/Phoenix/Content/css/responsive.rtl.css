@@ -735,10 +735,10 @@
     bottom: 0;
   }
   .html-category-page .px_category_page .col-sidebar .px_left_side_category {
-    background-color: #102c5a;
+    background-color: #dd182b;
   }
   .html-category-page .px_category_page .col-sidebar .block .title {
-    background: #102c5a url(../images/toggle-gray.png) left no-repeat;
+    background: #dd182b url(../images/toggle-gray.png) left no-repeat;
   }
   .html-category-page .px_category_page .col-sidebar .px_filter_block_title,
   .html-category-page .px_category_page .col-sidebar .product-manufacturer-filter label,
@@ -753,11 +753,11 @@
   }
   .html-category-page .px_category_page .col-sidebar .block .view-all a {
     background-color: #fff;
-    color: #102c5a;
+    color: #dd182b;
   }
   .html-category-page .px_category_page .col-sidebar .block .view-all a:hover {
     background-color: transparent;
-    color: #102c5a;
+    color: #dd182b;
   }
   .product-spec-filter ul.group.product-spec-group li strong,
   .product-spec-filter ul.group.product-spec-group li label {
@@ -840,7 +840,7 @@
   }
   .item-box .buttons.px-mobile-buttons button {
     background-image: none;
-    background-color: #102C5A;
+    background-color: #dd182b;
     background-image: none;
     width: 40px;
     height: 40px;
@@ -854,7 +854,7 @@
   }
   .item-box .buttons.px-mobile-buttons button:hover {
     background-color: #CAD2DF;
-    color: #102c5a;
+    color: #dd182b;
   }
   .item-box .buttons.px-mobile-buttons button:first-child {
     margin-left: 0;

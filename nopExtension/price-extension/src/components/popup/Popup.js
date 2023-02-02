@@ -4,7 +4,7 @@ import './Popup.css'
 function Popup({props}){
 
     return (
-            <div className="popup__container">
+            <>
               <button className="popup__close" type="button" />
               <div className="popup__content popup__content--tariff">
                 <div className="heading heading--h1 js-popup-title"><font style={{verticalAlign: 'inherit'}}><font style={{verticalAlign: 'inherit'}}>TIÊU CHUẨN</font></font></div>
@@ -46,7 +46,7 @@ function Popup({props}){
                   </div>
                 </form>
               </div>
-            </div>
+            </>
 
       )
 
