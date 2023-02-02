@@ -4,7 +4,6 @@ import './Popup.css'
 function Popup({}){
 
     return (
-          <div className="popup popup--visible" data-target="tariff" data-backdrop-click="false" tabIndex={-1}>
             <div className="popup__container">
               <button className="popup__close" type="button" />
               <div className="popup__content popup__content--tariff">
@@ -48,7 +47,6 @@ function Popup({}){
                 </form>
               </div>
             </div>
-          </div>
       )
 
 }

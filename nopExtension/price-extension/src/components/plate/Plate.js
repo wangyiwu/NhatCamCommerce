@@ -10,14 +10,16 @@ function Plate({}){
     const [isShown, setIsShown] = React.useState(false)
 
     return (
-        <Pane>
+        <Pane zIndex={1000}>
             <Dialog
                 isShown={isShown}
                 title="Dialog title"
                 onCloseComplete={() => setIsShown(false)}
                 confirmLabel="Custom Label 1"
                 preventBodyScrolling
-                style={{zIndex: '10000 !important'}}
+                hasFooter={false}
+                hasHeader={false}
+                overlayProps={{ className: 'popup popup--visible' }} 
             >
                 <Popup></Popup>
             </Dialog>
