@@ -17,6 +17,7 @@ function Plate({}){
                 onCloseComplete={() => setIsShown(false)}
                 confirmLabel="Custom Label 1"
                 preventBodyScrolling
+                style={{zIndex: '10000 !important'}}
             >
                 <Popup></Popup>
             </Dialog>
