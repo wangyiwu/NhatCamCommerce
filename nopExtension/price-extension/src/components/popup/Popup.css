@@ -372,6 +372,13 @@ html {
   .form__response:empty {
     display: none;
   } /* PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */ /* PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+  
+  .popup__container input[type="text"]{
+    padding-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
   .popup {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,18 +402,19 @@ html {
     background: rgba(0, 0, 0, 0.5);
     outline: none;
     opacity: 0;
-    overflow-x: auto;
-    overflow-y: scroll;
+    /* overflow-x: auto; */
+    /* overflow-y: scroll; */
+    height: fit-content;
     visibility: hidden;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    z-index: 1000;
   }
   .popup--visible {
     opacity: 1;
     visibility: visible;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-    z-index: 10000 !important;
   }
   .popup__container {
     margin-top: auto;
@@ -420,6 +428,7 @@ html {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     position: relative;
+    overflow: hidden;
   }
   @media (max-width: 768px) {
     .popup__container {

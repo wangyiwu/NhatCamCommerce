@@ -1,7 +1,7 @@
 import React from 'react'
 import './Popup.css'
 
-function Popup({}){
+function Popup({props}){
 
     return (
             <div className="popup__container">
@@ -47,6 +47,7 @@ function Popup({}){
                 </form>
               </div>
             </div>
+
       )
 
 }

@@ -10,20 +10,8 @@ function Plate({}){
     const [isShown, setIsShown] = React.useState(false)
 
     return (
-        <Pane zIndex={1000}>
-            <Dialog
-                isShown={isShown}
-                title="Dialog title"
-                onCloseComplete={() => setIsShown(false)}
-                confirmLabel="Custom Label 1"
-                preventBodyScrolling
-                hasFooter={false}
-                hasHeader={false}
-                overlayProps={{ className: 'popup popup--visible' }} 
-            >
-                <Popup></Popup>
-            </Dialog>
-
+        <Pane >
+            
             <div className="row">
                                 {listProduct.map((value, index) =>
                                 <div className="col-12 col-md-6 col-lg-3 flex">
@@ -34,8 +22,26 @@ function Plate({}){
 
                             )}
                     </div>
+
+                    <Dialog
+                isShown={isShown}
+                title="Dialog title"
+                onCloseComplete={() => setIsShown(false)}
+                confirmLabel="Custom Label 1"
+                hasFooter={false}
+                hasHeader={false}
+                overlayProps={{ className: 'popup popup--visible' }} 
+                contentContainerProps={{className: 'popup__container'}}
+                width={524}
+            >
+                <Popup></Popup>
+                
+            </Dialog>
+            
         </Pane>
+
         
+
     );
 }
 
