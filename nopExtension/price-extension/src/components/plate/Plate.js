@@ -2,6 +2,7 @@ import React from 'react'
 import Product from '../product/Product';
 import './Plate.css'
 import { Pane, Dialog, Button } from 'evergreen-ui'
+import Popup from '../popup/Popup';
 
 function Plate({}){
 
@@ -14,10 +15,10 @@ function Plate({}){
                 isShown={isShown}
                 title="Dialog title"
                 onCloseComplete={() => setIsShown(false)}
-                confirmLabel="Custom Label"
+                confirmLabel="Custom Label 1"
                 preventBodyScrolling
             >
-                Dialog content
+                <Popup></Popup>
             </Dialog>
 
             <div className="row">
