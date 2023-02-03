@@ -1796,8 +1796,9 @@ label, label + * {
 .item-box .actual-price {
   margin: 0 0px 5px 0;
   font-size: 18px;
-  color: #000;
+  color: #dd182b;
   display: inline-block;
+  font-weight:bold;
 }
 .item-box .base-price-pangv {
   margin: 0 0 8px 0;
