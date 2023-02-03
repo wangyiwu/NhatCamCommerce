@@ -9,25 +9,35 @@ services:
       - nginx-net
     depends_on:
       - nopcommerce_database
-#    volumes:
-#      - /root/themes:/app/Themes
+    volumes:
+      - nopcommerce_data:/app
   nopcommerce_database:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
-    container_name: nopcommerce_mssql_server
+    container_name: nopcommerce_mssql
     networks:
       - nginx-net
     ports:
       - "1433:1433"
     environment:
-      SA_PASSWORD: "nopCommerce_db_password"
+      SA_PASSWORD: "Admin@123"
       ACCEPT_EULA: "Y"
       MSSQL_PID: "Express"
     volumes:
-      - /root/mserver-data/29-01-2023:/var/opt/mssql
+      - sqlserver_data:/var/opt/mssql
 
 volumes:
+  sqlserver_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /root/nop_data/db_03_02_2023
   nopcommerce_data:
-
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /root/nop_data/web_03_02_2023
 
 networks:
   nginx-net:
