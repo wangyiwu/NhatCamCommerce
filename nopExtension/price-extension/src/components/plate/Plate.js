@@ -32,7 +32,7 @@ function Plate({}){
                 overlayProps={{ className: 'popup popup--visible' }} 
                 contentContainerProps={{className: 'popup__container'}}
                 width={524}
-            >
+                >
                 <Popup></Popup>
                 
             </Dialog>

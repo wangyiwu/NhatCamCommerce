@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CommingSoon from './components/commingsoon/commingsoon';
+import HomePage from './components/homepage/homepage';
 
-const root = ReactDOM.createRoot(document.getElementById('comming'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <CommingSoon />
+    <HomePage />
   </React.StrictMode>
 );
 

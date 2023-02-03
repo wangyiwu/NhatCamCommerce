@@ -1,10 +1,8 @@
 import styles from './commingsoon.module.css'
-import classNames from 'classnames';
 import React from 'react'
 
 function CommingSoon({props}){
     return (
-
         <section className={[styles.section,styles["bg-gray out-of-bounds-pic"], styles["out-of-bounds-pic--worker-2"]].join(" ")}>
           <div className={styles.container}>
             <div className={styles.row}>
