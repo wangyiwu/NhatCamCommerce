@@ -19,6 +19,8 @@ function HomePage({}){
                  overlayProps={{ className:`${Style.popup} ${Style["popup--visible"]}` }} 
                  contentContainerProps={{className: Style['popup__container']}}
                     width={524}
+                    minHeightContent={760}
+                    preventBodyScrolling
                 >
                 <Popup></Popup>
 

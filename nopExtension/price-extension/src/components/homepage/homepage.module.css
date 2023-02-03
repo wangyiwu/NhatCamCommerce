@@ -1074,7 +1074,7 @@ html {
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
-    padding: 1rem;
+    padding: 0;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1101,7 +1101,6 @@ html {
     margin-bottom: auto;
     width: 100%;
     max-width: 524px;
-    padding: 30px;
     background: #fff;
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
