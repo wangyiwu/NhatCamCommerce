@@ -27,17 +27,8 @@ services:
 
 volumes:
   sqlserver_data:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /root/nop_data/db_03_02_2023
   nopcommerce_data:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /root/nop_data/web_03_02_2023
+
 
 networks:
   nginx-net:
