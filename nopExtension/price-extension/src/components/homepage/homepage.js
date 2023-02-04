@@ -23,8 +23,6 @@ function HomePage({}){
                     preventBodyScrolling
                 >
                 <Popup></Popup>
-
-
                 
             </Dialog>
 
@@ -628,9 +626,9 @@ function HomePage({}){
                       <font style={{verticalAlign: 'inherit'}}> của hệ thống và trả lời các câu hỏi của bạn. </font>
                     </font>
                   </p>
-                  <button className={`${Style.btn} ${Style["btn--bordered"]} ${Style["btn--transparent"]} ${Style["btn--inverse"]}`} type="button" data-popup-target="simple-request" data-popup-title="Заказать звонок" data-popup-form-action="callback">
+                  <button onClick={() => setIsShown(true)} className={`${Style.btn} ${Style["btn--bordered"]} ${Style["btn--transparent"]} ${Style["btn--inverse"]}`} type="button" data-popup-target="simple-request" data-popup-title="Заказать звонок" data-popup-form-action="callback">
                     <font style={{verticalAlign: 'inherit'}}>
-                      <font style={{verticalAlign: 'inherit'}}>Gọi 0888033286</font>
+                      <font style={{verticalAlign: 'inherit'}}>Yêu cầu gọi tư vấn</font>
                     </font>
                   </button>
                 </div>
