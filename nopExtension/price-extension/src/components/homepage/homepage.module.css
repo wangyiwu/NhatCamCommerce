@@ -351,10 +351,16 @@ html {
     margin: 0 auto;
   }
 
+
+
   .container::before,
   .container::after {
     content: "";
     display: table;
+  }
+
+  .container .section-width{
+    padding: 0;
   }
 
   .row {
