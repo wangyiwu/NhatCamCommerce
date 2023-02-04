@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CommingSoon from './components/commingsoon/commingsoon';
 import HomePage from './components/homepage/homepage';
+import Footer from './components/footer/footer';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('one-footer'));
+//const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <Footer />
   </React.StrictMode>
 );
 
