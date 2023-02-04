@@ -8,9 +8,11 @@
 
 @media all and (max-width:1440px) {
   .header-upper,
-  .header-lower,
-  .section-width {
+  .header-lower{
     padding: 0 40px;
+  }
+  .section-width {
+    padding: 0;
   }
   .header-menu > ul > li {
     margin-right: 10px;
@@ -498,8 +500,11 @@
   .px_subcategory .slick-prev, .px_subcategory .slick-next {
     top: -60px;
   }
-  .header-upper, .header-lower, .section-width {
+  .header-upper, .header-lower {
     padding: 0 20px;
+  }
+  .section-width {
+    padding: 0;
   }
   .product-collateral {
     margin: 0 20px 30px;
