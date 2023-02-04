@@ -603,6 +603,14 @@ function HomePage({}){
           <section className={`${Style.section} ${Style["bg-gray"]} ${Style["out-of-bounds-pic"]} ${Style["out-of-bounds-pic--worker-2"]}`}>
             <div className={Style.container}>
               <div className={Style.row}>
+                <div class={`${Style["col-12"]} ${Style["col-md-4"]} ${Style["pv-1"]} ${Style.hide} ${Style["show-md"]} ${Style["out-of-bounds-pic__relative"]}`}>
+                    <div class={Style["out-of-bounds-pic__absolute"]}>
+                      <picture>
+                        <source srcSet="https://onecam.ru/src/img/bg-image__worker.webp" type="image/webp" />
+                        <img class={Style["out-of-bounds-pic__image"]} src="/src/img/bg-image__worker.png" alt="" />
+                      </picture>
+                    </div>
+                </div>
                 <div className={`${Style["col-12"]} ${Style["col-md-8"]} ${Style["text-center"]} ${Style["text-md-left"]}`}>
                   <div className={`${Style.heading} ${Style["heading--h2"]} ${Style["text-center"]} ${Style["text-md-left"]}`}>
                     <h2>
