@@ -363,10 +363,16 @@ ul.login-list li :hover{
 .section-bg {
   background-color: #F5F5F5;
 }
+
 .section-width{
   width: 100%;
   display: inline-block;
-  padding: 0; /*// vuong edit body of page width oldvalue: 0 70px*/
+  padding: 0 70px;
+}
+.topic-block .section-width{
+  width: 100%;
+  display: inline-block;
+  padding: 0;
 }
 
 .product-img{
@@ -2697,8 +2703,11 @@ button.checkout-button {
 .address-list-page-btns .delete-address-button {
     display: inline-block;
 }
-.home-page .topic-block{
-    padding: 30px 0 ;
+.topic-block{
+    padding: 10px 0 0 0;
+}
+.home-page{
+  padding: 10px 0 0 0;
 }
 .px-bestseller-fullwidth .px_right_grid{
     width: 100%;
